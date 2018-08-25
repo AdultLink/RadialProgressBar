@@ -11,16 +11,21 @@ public class RadialHealthBarEditor : ShaderGUI
 	private MaterialProperty _Arcrange = null;
 	private MaterialProperty _Fillpercentage = null;
 	private MaterialProperty _Globalopacity = null;
+
 	//MAINBAR
 	private MaterialProperty _Barmincolor = null;
 	private MaterialProperty _Barmaxcolor = null;
+	private MaterialProperty _Mainbarborderopacity = null;
 	private MaterialProperty _Barsecondarymincolor = null;
 	private MaterialProperty _Barsecondarymaxcolor = null;
 	private MaterialProperty _Bordermincolor = null;
 	private MaterialProperty _Bordermaxcolor = null;
 	private MaterialProperty _Mainborderradialwidth = null;
 	private MaterialProperty _Mainbordertangentwidth = null;
+
+	//MAIN TEX
 	private MaterialProperty _Maintex = null;
+	private MaterialProperty _Maintexopacity = null;
 	private MaterialProperty _Invertmaintex = null;
 	private MaterialProperty _Invertmaintexalpha = null;
 	private MaterialProperty _Maintextiling = null;
@@ -28,7 +33,10 @@ public class RadialHealthBarEditor : ShaderGUI
 	private MaterialProperty _Maintexscrollrotate = null;
 	private MaterialProperty _Maintexscrollspeed = null;
 	private MaterialProperty _Maintexrotatespeed = null;
+
+	//SECONDARY TEX
 	private MaterialProperty _Secondarytex = null;
+	private MaterialProperty _Secondarytexopacity = null;
 	private MaterialProperty _Invertsecondarytex = null;
 	private MaterialProperty _Invertsecondarytexalpha = null;
 	private MaterialProperty _Secondarytextiling = null;
@@ -36,6 +44,8 @@ public class RadialHealthBarEditor : ShaderGUI
 	private MaterialProperty _Secondarytexscrollrotate = null;
 	private MaterialProperty _Secondarytexscrollspeed = null;
 	private MaterialProperty _Secondarytexrotatespeed = null;
+
+	//NOISE TEX
 	private MaterialProperty _Noisetex = null;
 	private MaterialProperty _Noiseintensity = null;
 	private MaterialProperty _Invertnoisetex = null;
@@ -44,10 +54,13 @@ public class RadialHealthBarEditor : ShaderGUI
 	private MaterialProperty _Noisetexoffset = null;
 
 	//BACKGROUND
+	private MaterialProperty _Backgroundbordercolor = null;
+	private MaterialProperty _Backgroundborderopacity = null;
+	private MaterialProperty _Backgroundfillcolor = null;
+
+	private MaterialProperty _Backgroundopacity = null;
 	private MaterialProperty _Backgroundborderradialwidth = null;
 	private MaterialProperty _Backgroundbordertangentwidth = null;
-	private MaterialProperty _Backgroundbordercolor = null;
-	private MaterialProperty _Backgroundfillcolor = null;
 	
 
 	protected static bool ShowBackgroundSettings = true;
@@ -74,16 +87,21 @@ public class RadialHealthBarEditor : ShaderGUI
 		_Arcrange = FindProperty("_Arcrange", _properties);
 		_Fillpercentage = FindProperty("_Fillpercentage", _properties);
 		_Globalopacity = FindProperty("_Globalopacity", _properties);
+
 		//MAINBAR
 		_Barmincolor = FindProperty("_Barmincolor", _properties);
 		_Barmaxcolor = FindProperty("_Barmaxcolor", _properties);
+		_Mainbarborderopacity = FindProperty("_Mainbarborderopacity", _properties);
 		_Barsecondarymincolor = FindProperty("_Barsecondarymincolor", _properties);
 		_Barsecondarymaxcolor = FindProperty("_Barsecondarymaxcolor", _properties);
 		_Bordermincolor = FindProperty("_Bordermincolor", _properties);
 		_Bordermaxcolor = FindProperty("_Bordermaxcolor", _properties);
 		_Mainborderradialwidth = FindProperty("_Mainborderradialwidth", _properties);
 		_Mainbordertangentwidth = FindProperty("_Mainbordertangentwidth", _properties);
+
+		//MAIN TEX
 		_Maintex = FindProperty("_Maintex", _properties);
+		_Maintexopacity = FindProperty("_Maintexopacity", _properties);
 		_Invertmaintex = FindProperty("_Invertmaintex", _properties);
 		_Invertmaintexalpha = FindProperty("_Invertmaintexalpha", _properties);
 		_Maintextiling = FindProperty("_Maintextiling", _properties);
@@ -91,7 +109,10 @@ public class RadialHealthBarEditor : ShaderGUI
 		_Maintexscrollrotate = FindProperty("_Mainscrollrotate", _properties);
 		_Maintexscrollspeed = FindProperty("_Maintexscrollspeed", _properties);
 		_Maintexrotatespeed = FindProperty("_Maintexrotationspeed", _properties);
+
+		//SECONDARY TEX
 		_Secondarytex = FindProperty("_Secondarytex", _properties);
+		_Secondarytexopacity = FindProperty("_Secondarytexopacity", _properties);
 		_Invertsecondarytex = FindProperty("_Invertsecondarytex", _properties);
 		_Invertsecondarytexalpha = FindProperty("_Invertsecondarytexalpha", _properties);
 		_Secondarytextiling = FindProperty("_Secondarytextiling", _properties);
@@ -99,17 +120,22 @@ public class RadialHealthBarEditor : ShaderGUI
 		_Secondarytexscrollrotate = FindProperty("_Secondaryscrollrotate", _properties);
 		_Secondarytexscrollspeed = FindProperty("_Secondarytexscrollspeed", _properties);
 		_Secondarytexrotatespeed = FindProperty("_Secondarytexrotationspeed", _properties);
+
+		//NOISE TEX
 		_Noisetex = FindProperty("_Noisetex", _properties);
 		_Noiseintensity = FindProperty("_Noiseintensity", _properties);
 		_Invertnoisetex = FindProperty("_Invertnoisetex", _properties);
 		_Noisetexspeed = FindProperty("_Noisetexspeed", _properties);
 		_Noisetextiling = FindProperty("_Noisetextiling", _properties);
 		_Noisetexoffset = FindProperty("_Noisetexoffset", _properties);
+
 		//BACKGROUND
+		_Backgroundbordercolor = FindProperty("_Backgroundbordercolor", _properties);
+		_Backgroundopacity = FindProperty("_Backgroundopacity", _properties);
+		_Backgroundfillcolor = FindProperty("_Backgroundfillcolor", _properties);
+		_Backgroundborderopacity = FindProperty("_Backgroundborderopacity", _properties);
 		_Backgroundborderradialwidth = FindProperty("_Backgroundborderradialwidth", _properties);
 		_Backgroundbordertangentwidth = FindProperty("_Backgroundbordertangentwidth", _properties);
-		_Backgroundbordercolor = FindProperty("_Backgroundbordercolor", _properties);
-		_Backgroundfillcolor = FindProperty("_Backgroundfillcolor", _properties);
 	}
 
 	void DrawGUI() {
@@ -153,7 +179,9 @@ public class RadialHealthBarEditor : ShaderGUI
         EditorGUI.indentLevel++;
 		_materialEditor.SetDefaultGUIWidths();
 		_materialEditor.ShaderProperty(_Backgroundfillcolor, "Fill color");
+		_materialEditor.ShaderProperty(_Backgroundopacity, "Fill opacity");
 		_materialEditor.ShaderProperty(_Backgroundbordercolor, "Border color");
+		_materialEditor.ShaderProperty(_Backgroundborderopacity, "Border opacity");
 		_materialEditor.ShaderProperty(_Backgroundborderradialwidth, "Border radial width");
 		_materialEditor.ShaderProperty(_Backgroundbordertangentwidth, "Border tangential width");
 		EditorGUI.indentLevel--;
@@ -169,8 +197,9 @@ public class RadialHealthBarEditor : ShaderGUI
 			EditorGUI.indentLevel++;
 			_materialEditor.ShaderProperty(_Bordermincolor, "Min value color");
 			_materialEditor.ShaderProperty(_Bordermaxcolor, "Max value color");
-			_materialEditor.ShaderProperty(_Mainborderradialwidth, "Border radial width");
-			_materialEditor.ShaderProperty(_Mainbordertangentwidth, "Border tangential width");
+			_materialEditor.ShaderProperty(_Mainbarborderopacity, "Opacity");
+			_materialEditor.ShaderProperty(_Mainborderradialwidth, "Radial width");
+			_materialEditor.ShaderProperty(_Mainbordertangentwidth, "Tangential width");
 			EditorGUI.indentLevel--;
 		}
 		EditorGUILayout.EndVertical();
@@ -193,6 +222,7 @@ public class RadialHealthBarEditor : ShaderGUI
 				_materialEditor.ShaderProperty(_Maintex, "Texture");
 
 				EditorGUILayout.BeginVertical(EditorStyles.helpBox);
+				_materialEditor.ShaderProperty(_Maintexopacity, "Opacity");
 				_materialEditor.ShaderProperty(_Invertmaintex, "Invert color channels");
 				_materialEditor.ShaderProperty(_Invertmaintexalpha, "Invert alpha channel");
 				EditorGUILayout.EndVertical();
@@ -219,6 +249,7 @@ public class RadialHealthBarEditor : ShaderGUI
 				_materialEditor.ShaderProperty(_Secondarytex, "Texture");
 
 				EditorGUILayout.BeginVertical(EditorStyles.helpBox);
+				_materialEditor.ShaderProperty(_Secondarytexopacity, "Opacity");
 				_materialEditor.ShaderProperty(_Invertsecondarytex, "Invert color channels");
 				_materialEditor.ShaderProperty(_Invertsecondarytexalpha, "Invert alpha channel");
 				EditorGUILayout.EndVertical();

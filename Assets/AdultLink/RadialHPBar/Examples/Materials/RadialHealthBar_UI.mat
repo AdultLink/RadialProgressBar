@@ -131,6 +131,7 @@ Material:
     - _Mainborderradialwidth: 0.054
     - _Mainbordertangentwidth: 0
     - _Mainscrollrotate: 0
+    - _Maintexopacity: 1
     - _Maintexrotationspeed: 1
     - _Maintextureopacity: 1
     - _Metallic: 0
@@ -163,14 +164,14 @@ Material:
     - _BGColor: {r: 1, g: 1, b: 1, a: 1}
     - _BackgroundColor: {r: 0.049199797, g: 0.5807034, b: 0.9558824, a: 1}
     - _Backgroundbordercolor: {r: 0, g: 0.46069986, b: 0.8455882, a: 1}
-    - _Backgroundfillcolor: {r: 0, g: 0.20840964, b: 0.38970584, a: 1}
-    - _Barmaxcolor: {r: 0.028979266, g: 0.98529404, b: 0.3125736, a: 1}
-    - _Barmincolor: {r: 0.39923635, g: 0.8235294, b: 0.054498233, a: 1}
-    - _Barsecondarymaxcolor: {r: 0.04876721, g: 0.60294116, b: 0.37281805, a: 1}
-    - _Barsecondarymincolor: {r: 0.3651115, g: 0.5514706, b: 0.06893375, a: 1}
+    - _Backgroundfillcolor: {r: 0, g: 0.2084096, b: 0.3897058, a: 1}
+    - _Barmaxcolor: {r: 0.028979266, g: 0.98529404, b: 0.31257358, a: 1}
+    - _Barmincolor: {r: 0.39923632, g: 0.8235294, b: 0.054498218, a: 1}
+    - _Barsecondarymaxcolor: {r: 0.048767187, g: 0.60294116, b: 0.37281802, a: 1}
+    - _Barsecondarymincolor: {r: 0.36511147, g: 0.5514706, b: 0.068933725, a: 1}
     - _Bordercolor: {r: 0.42388234, g: 1.201, b: 0.59002465, a: 1}
-    - _Bordermaxcolor: {r: 0.011137554, g: 0.75735295, b: 0.23242831, a: 1}
-    - _Bordermincolor: {r: 0.26610184, g: 0.61764705, b: 0.06358126, a: 1}
+    - _Bordermaxcolor: {r: 0.011137554, g: 0.75735295, b: 0.23242828, a: 1}
+    - _Bordermincolor: {r: 0.26610178, g: 0.61764705, b: 0.063581236, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Color0: {r: 0.6824544, g: 0.2573529, b: 1, a: 0}
     - _Color1: {r: 0, g: 0.95862055, b: 1, a: 0}
