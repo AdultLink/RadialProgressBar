@@ -10,7 +10,7 @@ public class SimpleRadialHealthBarEditor : ShaderGUI
 	private MaterialProperty _Radius = null;
 	private MaterialProperty _Arcrange = null;
 	private MaterialProperty _Fillpercentage = null;
-	private MaterialProperty _Globaltransparency = null;
+	private MaterialProperty _Globalopacity = null;
 	//MAINBAR
 	private MaterialProperty _Barmincolor = null;
 	private MaterialProperty _Barmaxcolor = null;
@@ -52,7 +52,7 @@ public class SimpleRadialHealthBarEditor : ShaderGUI
 		_Radius = FindProperty("_Radius", _properties);
 		_Arcrange = FindProperty("_Arcrange", _properties);
 		_Fillpercentage = FindProperty("_Fillpercentage", _properties);
-		_Globaltransparency = FindProperty("_Globaltransparency", _properties);
+		_Globalopacity = FindProperty("_Globalopacity", _properties);
 		//MAINBAR
 		_Barmincolor = FindProperty("_Barmincolor", _properties);
 		_Barmaxcolor = FindProperty("_Barmaxcolor", _properties);
@@ -66,7 +66,7 @@ public class SimpleRadialHealthBarEditor : ShaderGUI
 		_materialEditor.ShaderProperty(_Radius, _Radius.displayName);
 		_materialEditor.ShaderProperty(_Arcrange, _Arcrange.displayName);
 		_materialEditor.ShaderProperty(_Fillpercentage, _Fillpercentage.displayName);
-		_materialEditor.ShaderProperty(_Globaltransparency, _Globaltransparency.displayName);
+		_materialEditor.ShaderProperty(_Globalopacity, _Globalopacity.displayName);
 		EditorGUI.indentLevel--;
 	}
 
