@@ -23,15 +23,19 @@ public class RadialHealthBarEditor : ShaderGUI
 	private MaterialProperty _Maintex = null;
 	private MaterialProperty _Invertmaintex = null;
 	private MaterialProperty _Invertmaintexalpha = null;
-	private MaterialProperty _Maintexspeed = null;
 	private MaterialProperty _Maintextiling = null;
 	private MaterialProperty _Maintexoffset = null;
+	private MaterialProperty _Maintexscrollrotate = null;
+	private MaterialProperty _Maintexscrollspeed = null;
+	private MaterialProperty _Maintexrotatespeed = null;
 	private MaterialProperty _Secondarytex = null;
 	private MaterialProperty _Invertsecondarytex = null;
 	private MaterialProperty _Invertsecondarytexalpha = null;
-	private MaterialProperty _Secondarytexspeed = null;
 	private MaterialProperty _Secondarytextiling = null;
 	private MaterialProperty _Secondarytexoffset = null;
+	private MaterialProperty _Secondarytexscrollrotate = null;
+	private MaterialProperty _Secondarytexscrollspeed = null;
+	private MaterialProperty _Secondarytexrotatespeed = null;
 	private MaterialProperty _Noisetex = null;
 	private MaterialProperty _Noiseintensity = null;
 	private MaterialProperty _Invertnoisetex = null;
@@ -107,15 +111,19 @@ public class RadialHealthBarEditor : ShaderGUI
 		_Maintex = FindProperty("_Maintex", _properties);
 		_Invertmaintex = FindProperty("_Invertmaintex", _properties);
 		_Invertmaintexalpha = FindProperty("_Invertmaintexalpha", _properties);
-		_Maintexspeed = FindProperty("_Maintexspeed", _properties);
 		_Maintextiling = FindProperty("_Maintextiling", _properties);
 		_Maintexoffset = FindProperty("_Maintexoffset", _properties);
+		_Maintexscrollrotate = FindProperty("_Mainscrollrotate", _properties);
+		_Maintexscrollspeed = FindProperty("_Maintexscrollspeed", _properties);
+		_Maintexrotatespeed = FindProperty("_Maintexrotationspeed", _properties);
 		_Secondarytex = FindProperty("_Secondarytex", _properties);
 		_Invertsecondarytex = FindProperty("_Invertsecondarytex", _properties);
 		_Invertsecondarytexalpha = FindProperty("_Invertsecondarytexalpha", _properties);
-		_Secondarytexspeed = FindProperty("_Secondarytexspeed", _properties);
 		_Secondarytextiling = FindProperty("_Secondarytextiling", _properties);
 		_Secondarytexoffset = FindProperty("_Secondarytexoffset", _properties);
+		_Secondarytexscrollrotate = FindProperty("_Secondaryscrollrotate", _properties);
+		_Secondarytexscrollspeed = FindProperty("_Secondarytexscrollspeed", _properties);
+		_Secondarytexrotatespeed = FindProperty("_Secondarytexrotationspeed", _properties);
 		_Noisetex = FindProperty("_Noisetex", _properties);
 		_Noiseintensity = FindProperty("_Noiseintensity", _properties);
 		_Invertnoisetex = FindProperty("_Invertnoisetex", _properties);
@@ -177,30 +185,54 @@ public class RadialHealthBarEditor : ShaderGUI
 			_materialEditor.ShaderProperty(_Barsecondarymaxcolor, "[Secondary] Max value color");
 			EditorGUI.indentLevel--;
 
+			//MAIN TEXTURE
 			EditorGUILayout.BeginVertical(EditorStyles.helpBox);
 			ShowMainTextureSettings = EditorGUILayout.Foldout(ShowMainTextureSettings, "Main texture");
 			if (ShowMainTextureSettings){
 				EditorGUI.indentLevel++;
 				_materialEditor.ShaderProperty(_Maintex, "Texture");
+
+				EditorGUILayout.BeginVertical(EditorStyles.helpBox);
 				_materialEditor.ShaderProperty(_Invertmaintex, "Invert color channels");
 				_materialEditor.ShaderProperty(_Invertmaintexalpha, "Invert alpha channel");
-				_materialEditor.ShaderProperty(_Maintexspeed, "Scroll speed");
+				EditorGUILayout.EndVertical();
+
+				EditorGUILayout.BeginVertical(EditorStyles.helpBox);
+				_materialEditor.ShaderProperty(_Maintexscrollrotate, "Scroll/rotate");
+				_materialEditor.ShaderProperty(_Maintexscrollspeed, "Scroll speed");
+				_materialEditor.ShaderProperty(_Maintexrotatespeed, "Rotation speed");
+				EditorGUILayout.EndVertical();
+
+				EditorGUILayout.BeginVertical(EditorStyles.helpBox);
 				_materialEditor.ShaderProperty(_Maintextiling, "Tiling");
 				_materialEditor.ShaderProperty(_Maintexoffset, "Offset");
+				EditorGUILayout.EndVertical();
 				EditorGUI.indentLevel--;
 			}
 			EditorGUILayout.EndVertical();
 
+			//SECONDARY TEXTURE
 			EditorGUILayout.BeginVertical(EditorStyles.helpBox);
 			ShowSecondaryTextureSettings = EditorGUILayout.Foldout(ShowSecondaryTextureSettings, "Secondary texture");
 			if (ShowSecondaryTextureSettings){
 				EditorGUI.indentLevel++;
 				_materialEditor.ShaderProperty(_Secondarytex, "Texture");
+
+				EditorGUILayout.BeginVertical(EditorStyles.helpBox);
 				_materialEditor.ShaderProperty(_Invertsecondarytex, "Invert color channels");
 				_materialEditor.ShaderProperty(_Invertsecondarytexalpha, "Invert alpha channel");
-				_materialEditor.ShaderProperty(_Secondarytexspeed, "Scroll speed");
+				EditorGUILayout.EndVertical();
+
+				EditorGUILayout.BeginVertical(EditorStyles.helpBox);
+				_materialEditor.ShaderProperty(_Secondarytexscrollrotate, "Scroll/rotate");
+				_materialEditor.ShaderProperty(_Secondarytexscrollspeed, "Scroll speed");
+				_materialEditor.ShaderProperty(_Secondarytexrotatespeed, "Rotation speed");
+				EditorGUILayout.EndVertical();
+
+				EditorGUILayout.BeginVertical(EditorStyles.helpBox);
 				_materialEditor.ShaderProperty(_Secondarytextiling, "Tiling");
 				_materialEditor.ShaderProperty(_Secondarytexoffset, "Offset");
+				EditorGUILayout.EndVertical();
 				EditorGUI.indentLevel--;
 			}
 			EditorGUILayout.EndVertical();

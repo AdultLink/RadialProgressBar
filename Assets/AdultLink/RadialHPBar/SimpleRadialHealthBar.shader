@@ -1,6 +1,6 @@
 // Made with Amplify Shader Editor
 // Available at the Unity Asset Store - http://u3d.as/y3X 
-Shader "AdultLink/RadialHealthBar/SimpleRadialHealthbar"
+Shader "AdultLink/RadialHealthBar/SimpleRadialHealthBar"
 {
 	Properties
 	{
@@ -129,7 +129,7 @@ Shader "AdultLink/RadialHealthBar/SimpleRadialHealthbar"
 }
 /*ASEBEGIN
 Version=15500
-675;100;808;444;3252.549;2497.002;9.764024;True;False
+527;100;1105;634;1172.299;1446.021;6.136921;True;False
 Node;AmplifyShaderEditor.CommentaryNode;114;-392.6233,-511.0027;Float;False;2801.047;895.4789;Generate percentage masks;17;135;12;1;11;145;34;33;207;141;36;208;30;105;29;23;28;26;Generate percentage masks;1,1,1,1;0;0
 Node;AmplifyShaderEditor.TextureCoordinatesNode;1;-315.3546,-385.6802;Float;True;0;-1;2;3;2;SAMPLER2D;;False;0;FLOAT2;1,1;False;1;FLOAT2;0,0;False;5;FLOAT2;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.CommentaryNode;166;2521.354,-1054.494;Float;False;787.2336;625.4528;Parameters;9;202;200;205;204;203;133;140;15;10;Parameters;0.6764706,1,0.7590263,1;0;0
@@ -148,7 +148,7 @@ Node;AmplifyShaderEditor.TFHCRemapNode;208;718.5518,173.3417;Float;False;5;0;FLO
 Node;AmplifyShaderEditor.GetLocalVarNode;141;724.7806,89.26335;Float;False;140;0;1;FLOAT;0
 Node;AmplifyShaderEditor.RegisterLocalVarNode;140;2871.935,-857.8337;Float;False;Fillpercentage;-1;True;1;0;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.LengthOpNode;12;265.1485,-131.7528;Float;False;1;0;FLOAT2;0,0;False;1;FLOAT;0
-Node;AmplifyShaderEditor.CommentaryNode;107;984.7448,491.6664;Float;False;1425.286;534.8368;Mainbar Fill;9;150;20;147;17;19;16;14;134;136;Mainbar Fill;1,1,1,1;0;0
+Node;AmplifyShaderEditor.CommentaryNode;107;984.7448,491.6664;Float;False;1425.286;534.8368;Mainbar Fill;9;150;20;147;17;19;16;14;134;136;Mainbar Fill;1,0.9726166,0.6029412,1;0;0
 Node;AmplifyShaderEditor.TFHCRemapNode;36;939.4335,173.5196;Float;False;5;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;1;False;3;FLOAT;1;False;4;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.TFHCRemapNode;29;1290.431,-383.1414;Float;True;5;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;1;False;3;FLOAT;0;False;4;FLOAT;1;False;1;FLOAT;0
 Node;AmplifyShaderEditor.RangedFloatNode;15;2583.377,-956.223;Float;False;Property;_Radius;Radius;0;0;Create;True;0;0;False;0;0.17;0.246;0;1;0;1;FLOAT;0
@@ -181,7 +181,7 @@ Node;AmplifyShaderEditor.BreakToComponentsNode;250;3111.264,34.61466;Float;False
 Node;AmplifyShaderEditor.RegisterLocalVarNode;202;2889.345,-758.8372;Float;False;Transparency;-1;True;1;0;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.GetLocalVarNode;201;3138.242,189.8047;Float;False;202;0;1;FLOAT;0
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode;199;3375.673,127.0787;Float;True;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0
-Node;AmplifyShaderEditor.StandardSurfaceOutputNode;0;3578.786,-83.7804;Float;False;True;2;Float;SimpleRadialHealthBarEditor;0;0;Standard;AdultLink/RadialHealthBar/SimpleRadialHealthbar;False;False;False;False;True;True;True;True;True;True;True;True;False;False;True;False;False;False;False;False;Back;0;False;-1;0;False;-1;False;0;False;-1;0;False;-1;False;0;Transparent;0.5;True;True;0;False;Transparent;;Transparent;ForwardOnly;True;True;True;True;True;True;True;True;True;True;True;True;True;True;True;True;True;0;False;-1;False;0;False;-1;255;False;-1;255;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;False;2;15;10;25;False;5;True;2;5;False;-1;10;False;-1;0;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;8.9;0.9117647,0.2480536,0.2480536,1;VertexOffset;True;False;Cylindrical;False;Relative;0;;-1;-1;-1;-1;0;False;0;0;False;-1;-1;0;False;-1;0;0;0;16;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT3;0,0,0;False;7;FLOAT3;0,0,0;False;8;FLOAT;0;False;9;FLOAT;0;False;10;FLOAT;0;False;13;FLOAT3;0,0,0;False;11;FLOAT3;0,0,0;False;12;FLOAT3;0,0,0;False;14;FLOAT4;0,0,0,0;False;15;FLOAT3;0,0,0;False;0
+Node;AmplifyShaderEditor.StandardSurfaceOutputNode;0;3578.786,-83.7804;Float;False;True;2;Float;SimpleRadialHealthBarEditor;0;0;Standard;AdultLink/RadialHealthBar/SimpleRadialHealthBar;False;False;False;False;True;True;True;True;True;True;True;True;False;False;True;False;False;False;False;False;Back;0;False;-1;0;False;-1;False;0;False;-1;0;False;-1;False;0;Transparent;0.5;True;True;0;False;Transparent;;Transparent;ForwardOnly;True;True;True;True;True;True;True;True;True;True;True;True;True;True;True;True;True;0;False;-1;False;0;False;-1;255;False;-1;255;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;False;2;15;10;25;False;5;True;2;5;False;-1;10;False;-1;0;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;8.9;0.9117647,0.2480536,0.2480536,1;VertexOffset;True;False;Cylindrical;False;Relative;0;;-1;-1;-1;-1;0;False;0;0;False;-1;-1;0;False;-1;0;0;0;16;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT3;0,0,0;False;7;FLOAT3;0,0,0;False;8;FLOAT;0;False;9;FLOAT;0;False;10;FLOAT;0;False;13;FLOAT3;0,0,0;False;11;FLOAT3;0,0,0;False;12;FLOAT3;0,0,0;False;14;FLOAT4;0,0,0,0;False;15;FLOAT3;0,0,0;False;0
 WireConnection;11;0;1;0
 WireConnection;26;0;11;0
 WireConnection;204;0;203;0
@@ -226,4 +226,4 @@ WireConnection;199;1;201;0
 WireConnection;0;2;39;0
 WireConnection;0;9;199;0
 ASEEND*/
-//CHKSM=004C114D9EBC97D2EAFC7730A263D4B271A6AFF1
+//CHKSM=415A626EB9B44E070E3AA5EC774DC346D87DCDDC
