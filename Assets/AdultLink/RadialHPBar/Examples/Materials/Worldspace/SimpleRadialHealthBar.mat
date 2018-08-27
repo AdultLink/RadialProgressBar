@@ -99,7 +99,7 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _Fillpercentage: 1
+    - _Fillpercentage: 0.945
     - _Globalopacity: 1
     - _Globaltransp: 1
     - _Globaltransparency: 1
@@ -127,6 +127,7 @@ Material:
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _Radius: 0.584
+    - _Rotation: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
