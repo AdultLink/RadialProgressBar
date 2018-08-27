@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: RadialHealthBar_UI
+  m_Name: Original
   m_Shader: {fileID: 4800000, guid: d9ecb8f62eacf3745a90d02a295701ad, type: 3}
   m_ShaderKeywords: _INVERTSECONDARYTEXALPHA_ON _INVERTSECONDARYTEX_ON _MAINSCROLLROTATE_SCROLL
     _SCROLLROTATE_NONE _SECONDARYSCROLLROTATE_ROTATE
@@ -107,7 +107,7 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _Fillpercentage: 1
+    - _Fillpercentage: 0.13
     - _Globalopacity: 1
     - _Globaltransp: 1
     - _Globaltransparency: 1
@@ -128,8 +128,8 @@ Material:
     - _MainTexRotationSpeed: 1
     - _MainbarBorderWidth: 0.033
     - _Mainbarborderopacity: 1
-    - _Mainborderradialwidth: 0.054
-    - _Mainbordertangentwidth: 0
+    - _Mainborderradialwidth: 0
+    - _Mainbordertangentwidth: 0.166
     - _Mainscrollrotate: 0
     - _Maintexopacity: 1
     - _Maintexrotationspeed: 1
@@ -140,7 +140,7 @@ Material:
     - _Noiseintensity: 10
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _Radius: 0.381
+    - _Radius: 0.955
     - _RotationSpeed: -0.08
     - _Scrollrotate: 2
     - _SecondaryTexRotationSpeed: 1
@@ -163,15 +163,15 @@ Material:
     - _ASEOutlineColor: {r: 0.9117647, g: 0.24805364, b: 0.24805364, a: 1}
     - _BGColor: {r: 1, g: 1, b: 1, a: 1}
     - _BackgroundColor: {r: 0.049199797, g: 0.5807034, b: 0.9558824, a: 1}
-    - _Backgroundbordercolor: {r: 0, g: 0.46069986, b: 0.8455882, a: 1}
-    - _Backgroundfillcolor: {r: 0, g: 0.2084096, b: 0.3897058, a: 1}
+    - _Backgroundbordercolor: {r: 0.21950689, g: 0.5362239, b: 0.85294116, a: 0}
+    - _Backgroundfillcolor: {r: 0.058282852, g: 0.5259269, b: 0.7205882, a: 0}
     - _Barmaxcolor: {r: 0.028979266, g: 0.98529404, b: 0.31257358, a: 1}
-    - _Barmincolor: {r: 0.39923632, g: 0.8235294, b: 0.054498218, a: 1}
+    - _Barmincolor: {r: 0.3992363, g: 0.8235294, b: 0.054498196, a: 0}
     - _Barsecondarymaxcolor: {r: 0.048767187, g: 0.60294116, b: 0.37281802, a: 1}
-    - _Barsecondarymincolor: {r: 0.36511147, g: 0.5514706, b: 0.068933725, a: 1}
+    - _Barsecondarymincolor: {r: 0.36511144, g: 0.5514706, b: 0.0689337, a: 0}
     - _Bordercolor: {r: 0.42388234, g: 1.201, b: 0.59002465, a: 1}
     - _Bordermaxcolor: {r: 0.011137554, g: 0.75735295, b: 0.23242828, a: 1}
-    - _Bordermincolor: {r: 0.26610178, g: 0.61764705, b: 0.063581236, a: 1}
+    - _Bordermincolor: {r: 0.26610172, g: 0.61764705, b: 0.06358119, a: 0.928}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Color0: {r: 0.6824544, g: 0.2573529, b: 1, a: 0}
     - _Color1: {r: 0, g: 0.95862055, b: 1, a: 0}
