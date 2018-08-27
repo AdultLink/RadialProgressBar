@@ -18,22 +18,35 @@ public class HealBar : MonoBehaviour {
 	// Update is called once per frame
 	private void Start() {
 		fillPercentage = initialHP;
-		increaseAmount = 1f / fillTime * 0.02f;
-		decreaseAmount = 1f / decreaseTime * 0.02f;
+		mat.SetFloat("_Fillpercentage", fillPercentage);
+		increaseAmount = 1f / fillTime * Time.fixedDeltaTime;
+		decreaseAmount = 1f / decreaseTime * Time.fixedDeltaTime;
 	}
 	void FixedUpdate () {
-		if (Input.GetKey(KeyCode.H) && fillPercentage != 1f) {
-			fillPercentage += increaseAmount;
-			fillPercentage = Mathf.Clamp(fillPercentage, 0f, 1f);
-			mat.SetFloat("_Fillpercentage", fillPercentage);
-			countDowntext.text = (fillTime * (1 - fillPercentage)).ToString("F1");
+		//IF HOLDING H
+		if (Input.GetKey(KeyCode.E)) {
+			//IF STILL NOT FULL
+			if (fillPercentage < 1f) {
+				fillPercentage += increaseAmount;
+				fillPercentage = Mathf.Clamp(fillPercentage, 0f, 1f);
+				mat.SetFloat("_Fillpercentage", fillPercentage);
+				countDowntext.gameObject.SetActive(true);
+				countDowntext.text = (fillTime * (1 - fillPercentage)).ToString("F1");
+			}
+			else {
+				countDowntext.gameObject.SetActive(false);
+			}
 		}
 		else {
-			if (fillPercentage != 0f) {
+			if (fillPercentage > 0f) {
+				countDowntext.gameObject.SetActive(true);
 				fillPercentage -= decreaseAmount;
 				fillPercentage = Mathf.Clamp(fillPercentage, 0f, 1f);
 				mat.SetFloat("_Fillpercentage", fillPercentage);
 				countDowntext.text = (fillTime * (1 - fillPercentage)).ToString("F1");
+			}
+			else {
+				countDowntext.gameObject.SetActive(false);
 			}
 		}
 	}
