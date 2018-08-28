@@ -161,8 +161,8 @@ Material:
     - _BackgroundColor: {r: 0.049199797, g: 0.5807034, b: 0.9558824, a: 1}
     - _Backgroundbordercolor: {r: 0.04919874, g: 0.5807034, b: 0.9558824, a: 1}
     - _Backgroundfillcolor: {r: 0.117646985, g: 0.34037685, b: 0.5, a: 1}
-    - _Barmaxcolor: {r: 0.21176463, g: 0.71276414, b: 1.2, a: 1}
-    - _Barmincolor: {r: 0.1984313, g: 0.65232474, b: 1.1, a: 1}
+    - _Barmaxcolor: {r: 1.2, g: 0.35324556, b: 0.18529415, a: 1}
+    - _Barmincolor: {r: 1.1, g: 0.32352942, b: 0.16823529, a: 1}
     - _Barsecondarymaxcolor: {r: 1, g: 1, b: 1, a: 1}
     - _Barsecondarymincolor: {r: 1, g: 1, b: 1, a: 1}
     - _Bordercolor: {r: 0.42388234, g: 1.201, b: 0.59002465, a: 1}

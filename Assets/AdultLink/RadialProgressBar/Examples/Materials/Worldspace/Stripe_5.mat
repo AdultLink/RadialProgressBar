@@ -48,7 +48,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Maintex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: bef0fbe1168ca6f4984c55a3d1fe2251, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -161,8 +161,8 @@ Material:
     - _BackgroundColor: {r: 0.049199797, g: 0.5807034, b: 0.9558824, a: 1}
     - _Backgroundbordercolor: {r: 0.04919874, g: 0.5807034, b: 0.9558824, a: 1}
     - _Backgroundfillcolor: {r: 0.117646985, g: 0.34037685, b: 0.5, a: 1}
-    - _Barmaxcolor: {r: 1.2, g: 1.0091684, b: 0.21176463, a: 1}
-    - _Barmincolor: {r: 1.1, g: 0.92169535, b: 0.19843116, a: 1}
+    - _Barmaxcolor: {r: 0.21176463, g: 0.70929027, b: 1.2, a: 1}
+    - _Barmincolor: {r: 0.19411764, g: 0.6513726, b: 1.1, a: 1}
     - _Barsecondarymaxcolor: {r: 1, g: 1, b: 1, a: 1}
     - _Barsecondarymincolor: {r: 1, g: 1, b: 1, a: 1}
     - _Bordercolor: {r: 0.42388234, g: 1.201, b: 0.59002465, a: 1}
@@ -175,7 +175,7 @@ Material:
     - _Maintexoffset: {r: 0, g: 0, b: 0, a: 0}
     - _Maintexscrollspeed: {r: 0, g: 0, b: 0, a: 0}
     - _Maintexspeed: {r: -0.01, g: 0, b: 0, a: 0}
-    - _Maintextiling: {r: 1, g: 1, b: 0, a: 0}
+    - _Maintextiling: {r: 5, g: 5, b: 0, a: 0}
     - _Maxcolor: {r: 0, g: 1, b: 0.50344807, a: 0}
     - _Mincolor: {r: 1, g: 0.2573529, b: 0.42636916, a: 0}
     - _Noisetexoffset: {r: 0, g: 0, b: 0, a: 0}

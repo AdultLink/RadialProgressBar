@@ -189,7 +189,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 42173220}
-  - component: {fileID: 42173222}
+  - component: {fileID: 42173221}
   m_Layer: 0
   m_Name: Rainbow
   m_TagString: Untagged
@@ -216,13 +216,26 @@ Transform:
   m_Father: {fileID: 104276888}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &42173222
-MeshFilter:
+--- !u!114 &42173221
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 42173219}
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3440c4a5ad6be1248861cd2748419443, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  strips:
+  - {fileID: 680666230}
+  - {fileID: 1211091119}
+  - {fileID: 652645134}
+  - {fileID: 751591659}
+  - {fileID: 337545323}
+  - {fileID: 1353175068}
+  fillTime: 3
+  waitTime: 2
 --- !u!1 &104276887
 GameObject:
   m_ObjectHideFlags: 0
@@ -520,6 +533,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 337545319}
+  - component: {fileID: 337545323}
   - component: {fileID: 337545321}
   - component: {fileID: 337545320}
   - component: {fileID: 337545322}
@@ -597,6 +611,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amplitude: 0.5
   frequency: 0.5
+--- !u!114 &337545323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 337545318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bad470bdee8ae1f44b694741037bb1d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fillSpeed: 14
+  scaleAmount: 0.2
+  scaleThreshold: 0.01
+  rainbowController: {fileID: 42173221}
 --- !u!1 &342698512
 GameObject:
   m_ObjectHideFlags: 0
@@ -1405,6 +1434,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 652645130}
+  - component: {fileID: 652645134}
   - component: {fileID: 652645132}
   - component: {fileID: 652645131}
   - component: {fileID: 652645133}
@@ -1482,6 +1512,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amplitude: 0.5
   frequency: 0.5
+--- !u!114 &652645134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 652645129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bad470bdee8ae1f44b694741037bb1d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fillSpeed: 18
+  scaleAmount: 0.2
+  scaleThreshold: 0.01
+  rainbowController: {fileID: 42173221}
 --- !u!1 &680666225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1490,6 +1535,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 680666226}
+  - component: {fileID: 680666230}
   - component: {fileID: 680666228}
   - component: {fileID: 680666227}
   - component: {fileID: 680666229}
@@ -1567,6 +1613,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amplitude: 0.5
   frequency: 0.5
+--- !u!114 &680666230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 680666225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bad470bdee8ae1f44b694741037bb1d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fillSpeed: 22
+  scaleAmount: 0.2
+  scaleThreshold: 0.01
+  rainbowController: {fileID: 42173221}
 --- !u!1 &722555499
 GameObject:
   m_ObjectHideFlags: 0
@@ -1783,6 +1844,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 751591655}
+  - component: {fileID: 751591659}
   - component: {fileID: 751591657}
   - component: {fileID: 751591656}
   - component: {fileID: 751591658}
@@ -1860,6 +1922,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amplitude: 0.5
   frequency: 0.5
+--- !u!114 &751591659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 751591654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bad470bdee8ae1f44b694741037bb1d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fillSpeed: 16
+  scaleAmount: 0.2
+  scaleThreshold: 0.01
+  rainbowController: {fileID: 42173221}
 --- !u!1 &764189736
 GameObject:
   m_ObjectHideFlags: 0
@@ -2757,6 +2834,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1211091115}
+  - component: {fileID: 1211091119}
   - component: {fileID: 1211091117}
   - component: {fileID: 1211091116}
   - component: {fileID: 1211091118}
@@ -2834,6 +2912,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amplitude: 0.5
   frequency: 0.5
+--- !u!114 &1211091119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1211091114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bad470bdee8ae1f44b694741037bb1d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fillSpeed: 20
+  scaleAmount: 0.2
+  scaleThreshold: 0.01
+  rainbowController: {fileID: 42173221}
 --- !u!1 &1221639780
 GameObject:
   m_ObjectHideFlags: 0
@@ -3244,6 +3337,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1353175064}
+  - component: {fileID: 1353175068}
   - component: {fileID: 1353175066}
   - component: {fileID: 1353175065}
   - component: {fileID: 1353175067}
@@ -3321,6 +3415,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amplitude: 0.5
   frequency: 0.5
+--- !u!114 &1353175068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1353175063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bad470bdee8ae1f44b694741037bb1d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fillSpeed: 12
+  scaleAmount: 0.2
+  scaleThreshold: 0.01
+  rainbowController: {fileID: 42173221}
 --- !u!1 &1375203446
 GameObject:
   m_ObjectHideFlags: 0
