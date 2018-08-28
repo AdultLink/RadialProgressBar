@@ -52,7 +52,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Maintex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 6a35c1fbda267f042864c469d8d0136f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -107,7 +107,7 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _Fillpercentage: 0.7272612
+    - _Fillpercentage: 0.545
     - _Globalopacity: 0.898
     - _Globaltransp: 1
     - _Globaltransparency: 1
@@ -132,7 +132,7 @@ Material:
     - _Mainbordertangentwidth: 0.17
     - _Mainscrollrotate: 1
     - _Maintexopacity: 1
-    - _Maintexrotationspeed: -0.2
+    - _Maintexrotationspeed: 0.2
     - _Maintextureopacity: 1
     - _Metallic: 0
     - _Mode: 0
@@ -165,10 +165,10 @@ Material:
     - _ASEOutlineColor: {r: 0.9117647, g: 0.24805364, b: 0.24805364, a: 1}
     - _BGColor: {r: 1, g: 1, b: 1, a: 1}
     - _BackgroundColor: {r: 0.049199797, g: 0.5807034, b: 0.9558824, a: 1}
-    - _Backgroundbordercolor: {r: 0.060337376, g: 0.25810978, b: 0.45588237, a: 1}
-    - _Backgroundfillcolor: {r: 0.045036763, g: 0.20422612, b: 0.3602941, a: 1}
-    - _Barmaxcolor: {r: 0.040873703, g: 0.4028485, b: 0.61764705, a: 1}
-    - _Barmincolor: {r: 0.1270545, g: 0.5755775, b: 0.6911765, a: 1}
+    - _Backgroundbordercolor: {r: 0.084441185, g: 0.36122048, b: 0.638, a: 1}
+    - _Backgroundfillcolor: {r: 0.06074994, g: 0.27548018, b: 0.486, a: 1}
+    - _Barmaxcolor: {r: 0.15916905, g: 0.6505664, b: 0.9411774, a: 1}
+    - _Barmincolor: {r: 0.039215688, g: 0.40392157, b: 0.61960787, a: 1}
     - _Barsecondarymaxcolor: {r: 0, g: 0, b: 0, a: 1}
     - _Barsecondarymincolor: {r: 0, g: 0, b: 0, a: 0}
     - _Bordercolor: {r: 0.42388234, g: 1.201, b: 0.59002465, a: 1}
@@ -181,7 +181,7 @@ Material:
     - _Maintexoffset: {r: 0, g: 0, b: 0, a: 0}
     - _Maintexscrollspeed: {r: 1, g: 0, b: 0, a: 0}
     - _Maintexspeed: {r: -0.01, g: 0, b: 0, a: 0}
-    - _Maintextiling: {r: 2, g: 2, b: 0, a: 0}
+    - _Maintextiling: {r: 1, g: 1, b: 0, a: 0}
     - _Maxcolor: {r: 0, g: 1, b: 0.50344807, a: 0}
     - _Mincolor: {r: 1, g: 0.2573529, b: 0.42636916, a: 0}
     - _Noisetexoffset: {r: 0, g: 0, b: 0, a: 0}

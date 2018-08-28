@@ -200,8 +200,8 @@ public class RadialProgressBarEditor : ShaderGUI
 		ShowBorderSettings = EditorGUILayout.Foldout(ShowBorderSettings, "Border");
 		if (ShowBorderSettings){
 			EditorGUI.indentLevel++;
-			_materialEditor.ShaderProperty(_Bordermincolor, "Min value color");
-			_materialEditor.ShaderProperty(_Bordermaxcolor, "Max value color");
+			_materialEditor.ShaderProperty(_Bordermincolor, "Color (min)");
+			_materialEditor.ShaderProperty(_Bordermaxcolor, "Color (max)");
 			_materialEditor.ShaderProperty(_Mainbarborderopacity, "Opacity");
 			_materialEditor.ShaderProperty(_Mainborderradialwidth, "Radial width");
 			_materialEditor.ShaderProperty(_Mainbordertangentwidth, "Tangential width");

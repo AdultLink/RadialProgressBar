@@ -9,7 +9,7 @@ Material:
   m_Name: RadialProgressBar
   m_Shader: {fileID: 4800000, guid: 5c0420a139d72394fb0ce7d877b7d215, type: 3}
   m_ShaderKeywords: _INVERTSECONDARYTEXALPHA_ON _INVERTSECONDARYTEX_ON _MAINSCROLLROTATE_SCROLL
-    _SCROLLROTATE_NONE _SECONDARYSCROLLROTATE_NONE
+    _SCROLLROTATE_NONE _SECONDARYSCROLLROTATE_SCROLL
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -56,7 +56,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Noisetex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: bf116699b9b45144b9288c1cac5ad626, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -140,7 +140,7 @@ Material:
     - _RotationSpeed: -0.08
     - _Scrollrotate: 2
     - _SecondaryTexRotationSpeed: 1
-    - _Secondaryscrollrotate: 2
+    - _Secondaryscrollrotate: 0
     - _Secondarytexopacity: 1
     - _Secondarytexrotationspeed: 1
     - _SmoothnessTextureChannel: 0
@@ -173,16 +173,16 @@ Material:
     - _Color1: {r: 0, g: 0.95862055, b: 1, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Maintexoffset: {r: 0, g: 0, b: 0, a: 0}
-    - _Maintexscrollspeed: {r: 0, g: 0, b: 0, a: 0}
+    - _Maintexscrollspeed: {r: -1, g: -1, b: 0, a: 0}
     - _Maintexspeed: {r: -0.01, g: 0, b: 0, a: 0}
     - _Maintextiling: {r: 1, g: 1, b: 0, a: 0}
     - _Maxcolor: {r: 0, g: 1, b: 0.50344807, a: 0}
     - _Mincolor: {r: 1, g: 0.2573529, b: 0.42636916, a: 0}
     - _Noisetexoffset: {r: 0, g: 0, b: 0, a: 0}
-    - _Noisetexspeed: {r: -0.5, g: 0.5, b: 0, a: 0}
+    - _Noisetexspeed: {r: 4, g: 4, b: 0, a: 0}
     - _Noisetextiling: {r: 1, g: 1, b: 0, a: 0}
     - _Secondarytexoffset: {r: 0, g: 0, b: 0, a: 0}
-    - _Secondarytexscrollspeed: {r: 0, g: 0, b: 0, a: 0}
+    - _Secondarytexscrollspeed: {r: -1, g: -1, b: 0, a: 0}
     - _Secondarytexspeed: {r: -0.01, g: -0.01, b: 0, a: 0}
     - _Secondarytextiling: {r: 0.5, g: 0.5, b: 0, a: 0}
     - _Texturescrollingspeed: {r: -0.01, g: 0, b: 0, a: 0}

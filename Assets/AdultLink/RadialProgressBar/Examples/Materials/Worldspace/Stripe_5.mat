@@ -6,11 +6,11 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Healing
-  m_Shader: {fileID: 4800000, guid: d9ecb8f62eacf3745a90d02a295701ad, type: 3}
-  m_ShaderKeywords: _INVERTMAINTEXALPHA_ON _INVERTMAINTEX_ON _INVERTSECONDARYTEXALPHA_ON
-    _INVERTSECONDARYTEX_ON _MAINSCROLLROTATE_SCROLL _SCROLLROTATE_NONE _SECONDARYSCROLLROTATE_ROTATE
-  m_LightmapFlags: 4
+  m_Name: Stripe_5
+  m_Shader: {fileID: 4800000, guid: 5c0420a139d72394fb0ce7d877b7d215, type: 3}
+  m_ShaderKeywords: _INVERTSECONDARYTEXALPHA_ON _INVERTSECONDARYTEX_ON _MAINSCROLLROTATE_SCROLL
+    _SCROLLROTATE_NONE _SECONDARYSCROLLROTATE_NONE
+  m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -19,10 +19,6 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _AlphaTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _Bartexture:
         m_Texture: {fileID: 2800000, guid: 590b7ebd14c1b5947b509330497fd817, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -52,7 +48,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Maintex:
-        m_Texture: {fileID: 2800000, guid: 96d27779a54157c4390eed5bb4581b51, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -88,15 +84,14 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - PixelSnap: 0
     - _ASEOutlineWidth: 8.9
-    - _Arcrange: 360
+    - _Arcrange: 180
     - _BGwidth: 0.023
-    - _Backgroundborderopacity: 1
-    - _Backgroundborderradialwidth: 0.039
+    - _Backgroundborderopacity: 0
+    - _Backgroundborderradialwidth: 0
     - _Backgroundbordertangentwidth: 0
     - _Backgroundborderwidth: 0.0405
-    - _Backgroundopacity: 1
+    - _Backgroundopacity: 0
     - _Backgroundwidth: 0.047
     - _BarRadius: 0.246
     - _Borderwidth: 0.033
@@ -107,8 +102,8 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _Fillpercentage: 0
-    - _Globalopacity: 0.75
+    - _Fillpercentage: 1
+    - _Globalopacity: 1
     - _Globaltransp: 1
     - _Globaltransparency: 1
     - _GlossMapScale: 1
@@ -120,15 +115,15 @@ Material:
     - _InvertSecondaryTex: 1
     - _InvertSecondaryTexAlpha: 1
     - _Invertmainrexalpha: 0
-    - _Invertmaintex: 1
-    - _Invertmaintexalpha: 1
+    - _Invertmaintex: 0
+    - _Invertmaintexalpha: 0
     - _Invertnoisetex: 0
     - _Invertsecondarytex: 1
     - _Invertsecondarytexalpha: 1
     - _MainTexRotationSpeed: 1
     - _MainbarBorderWidth: 0.033
-    - _Mainbarborderopacity: 1
-    - _Mainborderradialwidth: 0.031
+    - _Mainbarborderopacity: 0
+    - _Mainborderradialwidth: 0
     - _Mainbordertangentwidth: 0
     - _Mainscrollrotate: 0
     - _Maintexopacity: 1
@@ -140,15 +135,14 @@ Material:
     - _Noiseintensity: 10
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _Radius: 0.256
-    - _Rotate: 0
-    - _Rotation: 270
+    - _Radius: 1
+    - _Rotation: 0
     - _RotationSpeed: -0.08
     - _Scrollrotate: 2
     - _SecondaryTexRotationSpeed: 1
-    - _Secondaryscrollrotate: 1
+    - _Secondaryscrollrotate: 2
     - _Secondarytexopacity: 1
-    - _Secondarytexrotationspeed: -0.05
+    - _Secondarytexrotationspeed: 1
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
@@ -165,32 +159,32 @@ Material:
     - _ASEOutlineColor: {r: 0.9117647, g: 0.24805364, b: 0.24805364, a: 1}
     - _BGColor: {r: 1, g: 1, b: 1, a: 1}
     - _BackgroundColor: {r: 0.049199797, g: 0.5807034, b: 0.9558824, a: 1}
-    - _Backgroundbordercolor: {r: 0.21950683, g: 0.5362239, b: 0.85294116, a: 0}
-    - _Backgroundfillcolor: {r: 0.058282807, g: 0.5259269, b: 0.7205882, a: 0}
-    - _Barmaxcolor: {r: 0.038235407, g: 1.3, b: 0.41241023, a: 1}
-    - _Barmincolor: {r: 0.030196078, g: 1.1, b: 0.34941173, a: 1}
-    - _Barsecondarymaxcolor: {r: 0, g: 0, b: 0, a: 1}
-    - _Barsecondarymincolor: {r: 0, g: 0, b: 0, a: 0}
+    - _Backgroundbordercolor: {r: 0.04919874, g: 0.5807034, b: 0.9558824, a: 1}
+    - _Backgroundfillcolor: {r: 0.117646985, g: 0.34037685, b: 0.5, a: 1}
+    - _Barmaxcolor: {r: 1.2, g: 1.0091684, b: 0.21176463, a: 1}
+    - _Barmincolor: {r: 1.1, g: 0.92169535, b: 0.19843116, a: 1}
+    - _Barsecondarymaxcolor: {r: 1, g: 1, b: 1, a: 1}
+    - _Barsecondarymincolor: {r: 1, g: 1, b: 1, a: 1}
     - _Bordercolor: {r: 0.42388234, g: 1.201, b: 0.59002465, a: 1}
-    - _Bordermaxcolor: {r: 0.011137554, g: 0.75735295, b: 0.23242822, a: 1}
-    - _Bordermincolor: {r: 0.011764707, g: 0.7568628, b: 0.23137248, a: 1}
+    - _Bordermaxcolor: {r: 0.011137554, g: 0.75735295, b: 0.23242837, a: 1}
+    - _Bordermincolor: {r: 0.81617653, g: 0, b: 0, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Color0: {r: 0.6824544, g: 0.2573529, b: 1, a: 0}
     - _Color1: {r: 0, g: 0.95862055, b: 1, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Maintexoffset: {r: 0, g: 0, b: 0, a: 0}
-    - _Maintexscrollspeed: {r: 2, g: 0, b: 0, a: 0}
+    - _Maintexscrollspeed: {r: 0, g: 0, b: 0, a: 0}
     - _Maintexspeed: {r: -0.01, g: 0, b: 0, a: 0}
-    - _Maintextiling: {r: 1.5, g: 1.5, b: 0, a: 0}
+    - _Maintextiling: {r: 1, g: 1, b: 0, a: 0}
     - _Maxcolor: {r: 0, g: 1, b: 0.50344807, a: 0}
     - _Mincolor: {r: 1, g: 0.2573529, b: 0.42636916, a: 0}
     - _Noisetexoffset: {r: 0, g: 0, b: 0, a: 0}
-    - _Noisetexspeed: {r: -0.5, g: 0, b: 0, a: 0}
+    - _Noisetexspeed: {r: -0.5, g: 0.5, b: 0, a: 0}
     - _Noisetextiling: {r: 1, g: 1, b: 0, a: 0}
     - _Secondarytexoffset: {r: 0, g: 0, b: 0, a: 0}
-    - _Secondarytexscrollspeed: {r: -0.5, g: -0.15, b: 0, a: 0}
+    - _Secondarytexscrollspeed: {r: 0, g: 0, b: 0, a: 0}
     - _Secondarytexspeed: {r: -0.01, g: -0.01, b: 0, a: 0}
-    - _Secondarytextiling: {r: 0.2, g: 0.2, b: 0, a: 0}
+    - _Secondarytextiling: {r: 0.5, g: 0.5, b: 0, a: 0}
     - _Texturescrollingspeed: {r: -0.01, g: 0, b: 0, a: 0}
     - _Vector1: {r: -0.05, g: -0.05, b: 0, a: 0}
     - _Vector2: {r: -0.5, g: 0.5, b: 0, a: 0}

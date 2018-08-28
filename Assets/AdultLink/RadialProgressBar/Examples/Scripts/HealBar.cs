@@ -16,6 +16,10 @@ public class HealBar : MonoBehaviour {
 	private float decreaseAmount;
 	private float fillPercentage;
 	public Text countDowntext;
+
+	public Color defaultTextColor;
+	public Color highlightColor;
+	public Text descriptionText;
 	// Use this for initialization
 	
 	// Update is called once per frame
@@ -29,6 +33,7 @@ public class HealBar : MonoBehaviour {
 		//IF HOLDING H
 		if (Input.GetKey(KeyCode.E)) {
 			//IF STILL NOT FULL
+			setTextColor();
 			if (fillPercentage < 1f) {
 				fillPercentage += increaseAmount;
 				fillPercentage = Mathf.Clamp(fillPercentage, 0f, 1f);
@@ -41,6 +46,7 @@ public class HealBar : MonoBehaviour {
 			}
 		}
 		else {
+			resetTextColor();
 			if (fillPercentage > 0f) {
 				countDowntext.gameObject.SetActive(true);
 				fillPercentage -= decreaseAmount;
@@ -52,6 +58,14 @@ public class HealBar : MonoBehaviour {
 				countDowntext.gameObject.SetActive(false);
 			}
 		}
+	}
+
+	private void setTextColor() {
+		descriptionText.color = highlightColor;
+	}
+
+	private void resetTextColor() {
+		descriptionText.color = defaultTextColor;
 	}
 
 

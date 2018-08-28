@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace AdultLink
 {
@@ -14,6 +15,10 @@ public class PictureBar : MonoBehaviour {
 	private float initialPercentage = 1f;
 	public float fillTime = 0.25f;
 	private float increaseAmount;
+
+	public Color defaultTextColor;
+	public Color highlightColor;
+	public Text descriptionText;
 
 	void Start () {
 		fillPercentage = initialPercentage;
@@ -30,14 +35,24 @@ public class PictureBar : MonoBehaviour {
 	void FixedUpdate()
 	{
 		if (takingPhoto) {
+			setTextColor();
 			fillPercentage += increaseAmount;
 			fillPercentage = Mathf.Clamp(fillPercentage, 0f, 1f);
 			mat.SetFloat("_Fillpercentage", fillPercentage);
 			if (fillPercentage >= 1f) {
 				fillPercentage = 0f;
 				takingPhoto = false;
+				resetTextColor();
 			}
 		}
+	}
+
+	private void setTextColor() {
+		descriptionText.color = highlightColor;
+	}
+
+	private void resetTextColor() {
+		descriptionText.color = defaultTextColor;
 	}
 }
 }
