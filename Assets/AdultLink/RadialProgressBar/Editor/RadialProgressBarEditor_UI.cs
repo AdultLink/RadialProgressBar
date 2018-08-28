@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEditor;
  
-public class RadialHealthBarEditor_UI : ShaderGUI
+public class RadialProgressBarEditor_UI : ShaderGUI
 {
 	MaterialEditor _materialEditor;
 	MaterialProperty[] _properties;
