@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+namespace AdultLink
+{
 public enum Status {
 	accel,
 	braking,
@@ -74,5 +76,7 @@ public class SpeedBar : MonoBehaviour {
 	private void setText() {
 		speedValueText.text = (fillPercentage*maxSpeed).ToString("F0");
 	}
+
+}
 
 }

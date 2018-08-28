@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using UnityEditor;
  
+namespace AdultLink
+{
 public class RadialProgressBarEditor : ShaderGUI
 {
 	MaterialEditor _materialEditor;
@@ -210,19 +212,14 @@ public class RadialProgressBarEditor : ShaderGUI
 		EditorGUILayout.BeginVertical(EditorStyles.helpBox);
 		ShowFillSettings = EditorGUILayout.Foldout(ShowFillSettings, "Fill");
 		if (ShowFillSettings){
-			EditorGUI.indentLevel++;
-			_materialEditor.ShaderProperty(_Barmincolor, "[Main] Min value color");
-			_materialEditor.ShaderProperty(_Barmaxcolor, "[Main] Max value color");
-			_materialEditor.ShaderProperty(_Barsecondarymincolor, "[Secondary] Min value color");
-			_materialEditor.ShaderProperty(_Barsecondarymaxcolor, "[Secondary] Max value color");
-			EditorGUI.indentLevel--;
-
 			//MAIN TEXTURE
 			EditorGUILayout.BeginVertical(EditorStyles.helpBox);
 			ShowMainTextureSettings = EditorGUILayout.Foldout(ShowMainTextureSettings, "Main texture");
 			if (ShowMainTextureSettings){
 				EditorGUI.indentLevel++;
-				_materialEditor.ShaderProperty(_Maintex, "Texture");
+				_materialEditor.TexturePropertySingleLine(new GUIContent("Texture"), _Maintex);
+				_materialEditor.ShaderProperty(_Barmincolor, "Color (min)");
+				_materialEditor.ShaderProperty(_Barmaxcolor, "Color (max)");
 
 				EditorGUILayout.BeginVertical(EditorStyles.helpBox);
 				_materialEditor.ShaderProperty(_Maintexopacity, "Opacity");
@@ -249,7 +246,9 @@ public class RadialProgressBarEditor : ShaderGUI
 			ShowSecondaryTextureSettings = EditorGUILayout.Foldout(ShowSecondaryTextureSettings, "Secondary texture");
 			if (ShowSecondaryTextureSettings){
 				EditorGUI.indentLevel++;
-				_materialEditor.ShaderProperty(_Secondarytex, "Texture");
+				_materialEditor.TexturePropertySingleLine(new GUIContent("Texture"), _Secondarytex);
+				_materialEditor.ShaderProperty(_Barsecondarymincolor, "Color (min)");
+				_materialEditor.ShaderProperty(_Barsecondarymaxcolor, "Color (max)");
 
 				EditorGUILayout.BeginVertical(EditorStyles.helpBox);
 				_materialEditor.ShaderProperty(_Secondarytexopacity, "Opacity");
@@ -276,7 +275,7 @@ public class RadialProgressBarEditor : ShaderGUI
 			ShowNoiseTextureSettings = EditorGUILayout.Foldout(ShowNoiseTextureSettings, "Noise texture");
 			if (ShowNoiseTextureSettings){
 				EditorGUI.indentLevel++;
-				_materialEditor.ShaderProperty(_Noisetex, "Texture");
+				_materialEditor.TexturePropertySingleLine(new GUIContent("Texture"), _Noisetex);
 				EditorGUILayout.BeginVertical(EditorStyles.helpBox);
 				_materialEditor.ShaderProperty(_Noiseintensity, "Intensity multiplier");
 				_materialEditor.ShaderProperty(_Invertnoisetex, "Invert color channels");
@@ -306,4 +305,5 @@ public class RadialProgressBarEditor : ShaderGUI
 		EditorGUILayout.EndVertical();
 	}
 
+}
 }

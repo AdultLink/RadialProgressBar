@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using UnityEditor;
- 
+
+namespace AdultLink
+{
 public class SimpleRadialProgressBarEditor : ShaderGUI
 {
 	MaterialEditor _materialEditor;
@@ -77,8 +79,8 @@ public class SimpleRadialProgressBarEditor : ShaderGUI
 		//GLOBAL EMISSION
         EditorGUI.indentLevel++;
 		_materialEditor.SetDefaultGUIWidths();
-		_materialEditor.ShaderProperty(_Barmincolor, "Min value color");
-		_materialEditor.ShaderProperty(_Barmaxcolor, "Max value color");
+		_materialEditor.ShaderProperty(_Barmincolor, "Color (min)");
+		_materialEditor.ShaderProperty(_Barmaxcolor, "Color (max)");
 		EditorGUI.indentLevel--;
 	}
 
@@ -91,4 +93,5 @@ public class SimpleRadialProgressBarEditor : ShaderGUI
 		EditorGUI.indentLevel--;
 		EditorGUILayout.EndVertical();
 	}
+}
 }

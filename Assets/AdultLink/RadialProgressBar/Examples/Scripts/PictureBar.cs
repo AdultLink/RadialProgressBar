@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+namespace AdultLink
+{
 public class PictureBar : MonoBehaviour {
 
 	// Use this for initialization
@@ -37,4 +39,5 @@ public class PictureBar : MonoBehaviour {
 			}
 		}
 	}
+}
 }

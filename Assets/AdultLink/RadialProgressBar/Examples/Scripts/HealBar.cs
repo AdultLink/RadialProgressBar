@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+namespace AdultLink
+{
+	
 public class HealBar : MonoBehaviour {
 
 	public Material mat;
@@ -51,5 +54,7 @@ public class HealBar : MonoBehaviour {
 		}
 	}
 
+
+}
 
 }
