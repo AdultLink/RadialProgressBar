@@ -8,8 +8,8 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: Healing
   m_Shader: {fileID: 4800000, guid: d9ecb8f62eacf3745a90d02a295701ad, type: 3}
-  m_ShaderKeywords: _INVERTMAINTEXALPHA_ON _INVERTMAINTEX_ON _INVERTSECONDARYTEXALPHA_ON
-    _INVERTSECONDARYTEX_ON _MAINSCROLLROTATE_SCROLL _SCROLLROTATE_NONE _SECONDARYSCROLLROTATE_ROTATE
+  m_ShaderKeywords: _INVERTMAINTEXALPHA_ON _INVERTSECONDARYTEXALPHA_ON _INVERTSECONDARYTEX_ON
+    _MAINSCROLLROTATE_SCROLL _SCROLLROTATE_NONE _SECONDARYSCROLLROTATE_ROTATE
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -120,7 +120,7 @@ Material:
     - _InvertSecondaryTex: 1
     - _InvertSecondaryTexAlpha: 1
     - _Invertmainrexalpha: 0
-    - _Invertmaintex: 1
+    - _Invertmaintex: 0
     - _Invertmaintexalpha: 1
     - _Invertnoisetex: 0
     - _Invertsecondarytex: 1
@@ -131,6 +131,7 @@ Material:
     - _Mainborderradialwidth: 0.031
     - _Mainbordertangentwidth: 0
     - _Mainscrollrotate: 0
+    - _Maintexcontrast: 1
     - _Maintexopacity: 1
     - _Maintexrotationspeed: 1
     - _Maintextureopacity: 1
@@ -138,6 +139,7 @@ Material:
     - _Mode: 0
     - _Niseintensity: 5.01
     - _Noiseintensity: 10
+    - _Noisetexcontrast: 1
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _Radius: 0.256
@@ -147,6 +149,7 @@ Material:
     - _Scrollrotate: 2
     - _SecondaryTexRotationSpeed: 1
     - _Secondaryscrollrotate: 1
+    - _Secondarytexcontrast: 1
     - _Secondarytexopacity: 1
     - _Secondarytexrotationspeed: -0.05
     - _SmoothnessTextureChannel: 0

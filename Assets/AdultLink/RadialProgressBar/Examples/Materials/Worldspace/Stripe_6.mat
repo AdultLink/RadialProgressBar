@@ -48,7 +48,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Maintex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: ee5863f846f2a7e47bd7231cdedd136e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -99,6 +99,7 @@ Material:
     - _Borderwidth3: 0.127
     - _BumpScale: 1
     - _ColorMask: 15
+    - _Contrast: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
@@ -126,6 +127,7 @@ Material:
     - _Mainborderradialwidth: 0
     - _Mainbordertangentwidth: 0
     - _Mainscrollrotate: 0
+    - _Maintexcontrast: 0.14
     - _Maintexopacity: 1
     - _Maintexrotationspeed: 1
     - _Maintextureopacity: 1
@@ -133,6 +135,7 @@ Material:
     - _Mode: 0
     - _Niseintensity: 5.01
     - _Noiseintensity: 10
+    - _Noisetexcontrast: 0.8
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _Radius: 0.828
@@ -141,6 +144,7 @@ Material:
     - _Scrollrotate: 2
     - _SecondaryTexRotationSpeed: 1
     - _Secondaryscrollrotate: 2
+    - _Secondarytexcontrast: 0.8
     - _Secondarytexopacity: 1
     - _Secondarytexrotationspeed: 1
     - _SmoothnessTextureChannel: 0
@@ -154,15 +158,15 @@ Material:
     - _UVSec: 0
     - _UseUIAlphaClip: 0
     - _ZWrite: 1
-    - __dirty: 1
+    - __dirty: 0
     m_Colors:
     - _ASEOutlineColor: {r: 0.9117647, g: 0.24805364, b: 0.24805364, a: 1}
     - _BGColor: {r: 1, g: 1, b: 1, a: 1}
     - _BackgroundColor: {r: 0.049199797, g: 0.5807034, b: 0.9558824, a: 1}
     - _Backgroundbordercolor: {r: 0.04919874, g: 0.5807034, b: 0.9558824, a: 1}
     - _Backgroundfillcolor: {r: 0.117646985, g: 0.34037685, b: 0.5, a: 1}
-    - _Barmaxcolor: {r: 0.1943772, g: 0.9441177, b: 0.23614548, a: 1}
-    - _Barmincolor: {r: 0.17533153, g: 0.845098, b: 0.21039782, a: 1}
+    - _Barmaxcolor: {r: 0.22647054, g: 1.1, b: 0.27513516, a: 1}
+    - _Barmincolor: {r: 0.2282157, g: 1.1, b: 0.27385885, a: 1}
     - _Barsecondarymaxcolor: {r: 1, g: 1, b: 1, a: 1}
     - _Barsecondarymincolor: {r: 1, g: 1, b: 1, a: 1}
     - _Bordercolor: {r: 0.42388234, g: 1.201, b: 0.59002465, a: 1}
@@ -175,7 +179,7 @@ Material:
     - _Maintexoffset: {r: 0, g: 0, b: 0, a: 0}
     - _Maintexscrollspeed: {r: 0, g: 0, b: 0, a: 0}
     - _Maintexspeed: {r: -0.01, g: 0, b: 0, a: 0}
-    - _Maintextiling: {r: 1, g: 1, b: 0, a: 0}
+    - _Maintextiling: {r: 10, g: 10, b: 0, a: 0}
     - _Maxcolor: {r: 0, g: 1, b: 0.50344807, a: 0}
     - _Mincolor: {r: 1, g: 0.2573529, b: 0.42636916, a: 0}
     - _Noisetexoffset: {r: 0, g: 0, b: 0, a: 0}

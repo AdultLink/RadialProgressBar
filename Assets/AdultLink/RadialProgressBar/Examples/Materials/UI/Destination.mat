@@ -140,7 +140,7 @@ Material:
     - _Noiseintensity: 10
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _Radius: 0
+    - _Radius: 0.2
     - _Rotate: 0
     - _Rotation: 0
     - _RotationSpeed: -0.08

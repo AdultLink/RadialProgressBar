@@ -8,7 +8,7 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: Stripe_4
   m_Shader: {fileID: 4800000, guid: 5c0420a139d72394fb0ce7d877b7d215, type: 3}
-  m_ShaderKeywords: _INVERTSECONDARYTEXALPHA_ON _INVERTSECONDARYTEX_ON _MAINSCROLLROTATE_ROTATE
+  m_ShaderKeywords: _INVERTSECONDARYTEXALPHA_ON _INVERTSECONDARYTEX_ON _MAINSCROLLROTATE_SCROLL
     _SCROLLROTATE_NONE _SECONDARYSCROLLROTATE_NONE
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
@@ -48,7 +48,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Maintex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 7a6f45f810145dd4d9e57dc00a2b40b6, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -99,6 +99,7 @@ Material:
     - _Borderwidth3: 0.127
     - _BumpScale: 1
     - _ColorMask: 15
+    - _Contrast: 0.8
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
@@ -125,7 +126,8 @@ Material:
     - _Mainbarborderopacity: 0
     - _Mainborderradialwidth: 0
     - _Mainbordertangentwidth: 0
-    - _Mainscrollrotate: 1
+    - _Mainscrollrotate: 0
+    - _Maintexcontrast: 0.8
     - _Maintexopacity: 1
     - _Maintexrotationspeed: 0.1
     - _Maintextureopacity: 1
@@ -133,6 +135,7 @@ Material:
     - _Mode: 0
     - _Niseintensity: 5.01
     - _Noiseintensity: 10
+    - _Noisetexcontrast: 0.8
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _Radius: 1
@@ -141,6 +144,7 @@ Material:
     - _Scrollrotate: 2
     - _SecondaryTexRotationSpeed: 1
     - _Secondaryscrollrotate: 2
+    - _Secondarytexcontrast: 0.8
     - _Secondarytexopacity: 1
     - _Secondarytexrotationspeed: 1
     - _SmoothnessTextureChannel: 0
@@ -173,9 +177,9 @@ Material:
     - _Color1: {r: 0, g: 0.95862055, b: 1, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Maintexoffset: {r: 0, g: 0, b: 0, a: 0}
-    - _Maintexscrollspeed: {r: 0, g: 0, b: 0, a: 0}
+    - _Maintexscrollspeed: {r: -5, g: -5, b: 0, a: 0}
     - _Maintexspeed: {r: -0.01, g: 0, b: 0, a: 0}
-    - _Maintextiling: {r: 5, g: 5, b: 0, a: 0}
+    - _Maintextiling: {r: 3, g: 3, b: 0, a: 0}
     - _Maxcolor: {r: 0, g: 1, b: 0.50344807, a: 0}
     - _Mincolor: {r: 1, g: 0.2573529, b: 0.42636916, a: 0}
     - _Noisetexoffset: {r: 0, g: 0, b: 0, a: 0}
