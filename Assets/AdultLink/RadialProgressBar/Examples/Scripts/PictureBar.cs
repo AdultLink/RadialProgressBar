@@ -9,7 +9,7 @@ public class PictureBar : MonoBehaviour {
 
 	// Use this for initialization
 	public Material mat;
-	private bool takingPhoto;
+	private bool takingPhoto = true;
 	private float fillPercentage;
 
 	private float initialPercentage = 1f;

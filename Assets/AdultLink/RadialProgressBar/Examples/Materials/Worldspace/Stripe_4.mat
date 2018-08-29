@@ -154,7 +154,7 @@ Material:
     - _UVSec: 0
     - _UseUIAlphaClip: 0
     - _ZWrite: 1
-    - __dirty: 1
+    - __dirty: 0
     m_Colors:
     - _ASEOutlineColor: {r: 0.9117647, g: 0.24805364, b: 0.24805364, a: 1}
     - _BGColor: {r: 1, g: 1, b: 1, a: 1}
@@ -175,7 +175,7 @@ Material:
     - _Maintexoffset: {r: 0, g: 0, b: 0, a: 0}
     - _Maintexscrollspeed: {r: 0, g: 0, b: 0, a: 0}
     - _Maintexspeed: {r: -0.01, g: 0, b: 0, a: 0}
-    - _Maintextiling: {r: 1, g: 1, b: 0, a: 0}
+    - _Maintextiling: {r: 5, g: 5, b: 0, a: 0}
     - _Maxcolor: {r: 0, g: 1, b: 0.50344807, a: 0}
     - _Mincolor: {r: 1, g: 0.2573529, b: 0.42636916, a: 0}
     - _Noisetexoffset: {r: 0, g: 0, b: 0, a: 0}
