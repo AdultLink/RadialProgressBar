@@ -103,7 +103,7 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _Fillpercentage: 1
+    - _Fillpercentage: 0.85
     - _Globalopacity: 1
     - _Globaltransp: 1
     - _Globaltransparency: 1
@@ -127,7 +127,7 @@ Material:
     - _Mainborderradialwidth: 0
     - _Mainbordertangentwidth: 0
     - _Mainscrollrotate: 0
-    - _Maintexcontrast: 0.8
+    - _Maintexcontrast: 1
     - _Maintexopacity: 1
     - _Maintexrotationspeed: 0.1
     - _Maintextureopacity: 1
@@ -165,7 +165,7 @@ Material:
     - _BackgroundColor: {r: 0.049199797, g: 0.5807034, b: 0.9558824, a: 1}
     - _Backgroundbordercolor: {r: 0.04919874, g: 0.5807034, b: 0.9558824, a: 1}
     - _Backgroundfillcolor: {r: 0.117646985, g: 0.34037685, b: 0.5, a: 1}
-    - _Barmaxcolor: {r: 0.40941155, g: 0.21176463, b: 1.2, a: 1}
+    - _Barmaxcolor: {r: 0.4776467, g: 0.24705866, b: 1.4, a: 1}
     - _Barmincolor: {r: 0.37529394, g: 0.19411764, b: 1.1, a: 1}
     - _Barsecondarymaxcolor: {r: 1, g: 1, b: 1, a: 1}
     - _Barsecondarymincolor: {r: 1, g: 1, b: 1, a: 1}

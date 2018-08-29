@@ -8,8 +8,8 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: Stripe_6
   m_Shader: {fileID: 4800000, guid: 5c0420a139d72394fb0ce7d877b7d215, type: 3}
-  m_ShaderKeywords: _INVERTSECONDARYTEXALPHA_ON _INVERTSECONDARYTEX_ON _MAINSCROLLROTATE_SCROLL
-    _SCROLLROTATE_NONE _SECONDARYSCROLLROTATE_NONE
+  m_ShaderKeywords: _INVERTSECONDARYTEXALPHA_ON _MAINSCROLLROTATE_SCROLL _SCROLLROTATE_NONE
+    _SECONDARYSCROLLROTATE_NONE
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -103,7 +103,7 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _Fillpercentage: 1
+    - _Fillpercentage: 0.75
     - _Globalopacity: 1
     - _Globaltransp: 1
     - _Globaltransparency: 1
@@ -119,12 +119,12 @@ Material:
     - _Invertmaintex: 0
     - _Invertmaintexalpha: 0
     - _Invertnoisetex: 0
-    - _Invertsecondarytex: 1
+    - _Invertsecondarytex: 0
     - _Invertsecondarytexalpha: 1
     - _MainTexRotationSpeed: 1
     - _MainbarBorderWidth: 0.033
-    - _Mainbarborderopacity: 0
-    - _Mainborderradialwidth: 0
+    - _Mainbarborderopacity: 1
+    - _Mainborderradialwidth: 0.019
     - _Mainbordertangentwidth: 0
     - _Mainscrollrotate: 0
     - _Maintexcontrast: 0.14
@@ -165,19 +165,19 @@ Material:
     - _BackgroundColor: {r: 0.049199797, g: 0.5807034, b: 0.9558824, a: 1}
     - _Backgroundbordercolor: {r: 0.04919874, g: 0.5807034, b: 0.9558824, a: 1}
     - _Backgroundfillcolor: {r: 0.117646985, g: 0.34037685, b: 0.5, a: 1}
-    - _Barmaxcolor: {r: 0.22647054, g: 1.1, b: 0.27513516, a: 1}
+    - _Barmaxcolor: {r: 0.2676469, g: 1.3, b: 0.32515964, a: 1}
     - _Barmincolor: {r: 0.2282157, g: 1.1, b: 0.27385885, a: 1}
     - _Barsecondarymaxcolor: {r: 1, g: 1, b: 1, a: 1}
     - _Barsecondarymincolor: {r: 1, g: 1, b: 1, a: 1}
     - _Bordercolor: {r: 0.42388234, g: 1.201, b: 0.59002465, a: 1}
-    - _Bordermaxcolor: {r: 0.011137554, g: 0.75735295, b: 0.23242837, a: 1}
-    - _Bordermincolor: {r: 0.81617653, g: 0, b: 0, a: 1}
+    - _Bordermaxcolor: {r: 0.52205884, g: 1, b: 0.6637926, a: 1}
+    - _Bordermincolor: {r: 0.52156866, g: 1, b: 0.6627451, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Color0: {r: 0.6824544, g: 0.2573529, b: 1, a: 0}
     - _Color1: {r: 0, g: 0.95862055, b: 1, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Maintexoffset: {r: 0, g: 0, b: 0, a: 0}
-    - _Maintexscrollspeed: {r: 0, g: 0, b: 0, a: 0}
+    - _Maintexscrollspeed: {r: -10, g: 0, b: 0, a: 0}
     - _Maintexspeed: {r: -0.01, g: 0, b: 0, a: 0}
     - _Maintextiling: {r: 10, g: 10, b: 0, a: 0}
     - _Maxcolor: {r: 0, g: 1, b: 0.50344807, a: 0}
