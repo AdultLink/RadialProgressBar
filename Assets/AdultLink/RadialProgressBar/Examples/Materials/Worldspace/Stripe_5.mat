@@ -48,7 +48,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Maintex:
-        m_Texture: {fileID: 2800000, guid: bef0fbe1168ca6f4984c55a3d1fe2251, type: 3}
+        m_Texture: {fileID: 2800000, guid: 1500944ba27a6a048a1a778139585f4d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -163,7 +163,7 @@ Material:
     - _Backgroundfillcolor: {r: 0.117646985, g: 0.34037685, b: 0.5, a: 1}
     - _Barmaxcolor: {r: 0.21176463, g: 0.70929027, b: 1.2, a: 1}
     - _Barmincolor: {r: 0.19411764, g: 0.6513726, b: 1.1, a: 1}
-    - _Barsecondarymaxcolor: {r: 1, g: 1, b: 1, a: 1}
+    - _Barsecondarymaxcolor: {r: 0.39705884, g: 0.39705884, b: 0.39705884, a: 0}
     - _Barsecondarymincolor: {r: 1, g: 1, b: 1, a: 1}
     - _Bordercolor: {r: 0.42388234, g: 1.201, b: 0.59002465, a: 1}
     - _Bordermaxcolor: {r: 0.011137554, g: 0.75735295, b: 0.23242837, a: 1}

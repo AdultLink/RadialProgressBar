@@ -29,8 +29,6 @@ public class RadialProgressBarEditor : ShaderGUI
 	//MAIN TEX
 	private MaterialProperty _Maintex = null;
 	private MaterialProperty _Maintexopacity = null;
-	private MaterialProperty _Invertmaintex = null;
-	private MaterialProperty _Invertmaintexalpha = null;
 	private MaterialProperty _Maintextiling = null;
 	private MaterialProperty _Maintexoffset = null;
 	private MaterialProperty _Maintexscrollrotate = null;
@@ -40,8 +38,6 @@ public class RadialProgressBarEditor : ShaderGUI
 	//SECONDARY TEX
 	private MaterialProperty _Secondarytex = null;
 	private MaterialProperty _Secondarytexopacity = null;
-	private MaterialProperty _Invertsecondarytex = null;
-	private MaterialProperty _Invertsecondarytexalpha = null;
 	private MaterialProperty _Secondarytextiling = null;
 	private MaterialProperty _Secondarytexoffset = null;
 	private MaterialProperty _Secondarytexscrollrotate = null;
@@ -51,7 +47,6 @@ public class RadialProgressBarEditor : ShaderGUI
 	//NOISE TEX
 	private MaterialProperty _Noisetex = null;
 	private MaterialProperty _Noiseintensity = null;
-	private MaterialProperty _Invertnoisetex = null;
 	private MaterialProperty _Noisetexspeed = null;
 	private MaterialProperty _Noisetextiling = null;
 	private MaterialProperty _Noisetexoffset = null;
@@ -106,8 +101,6 @@ public class RadialProgressBarEditor : ShaderGUI
 		//MAIN TEX
 		_Maintex = FindProperty("_Maintex", _properties);
 		_Maintexopacity = FindProperty("_Maintexopacity", _properties);
-		_Invertmaintex = FindProperty("_Invertmaintex", _properties);
-		_Invertmaintexalpha = FindProperty("_Invertmaintexalpha", _properties);
 		_Maintextiling = FindProperty("_Maintextiling", _properties);
 		_Maintexoffset = FindProperty("_Maintexoffset", _properties);
 		_Maintexscrollrotate = FindProperty("_Mainscrollrotate", _properties);
@@ -117,8 +110,6 @@ public class RadialProgressBarEditor : ShaderGUI
 		//SECONDARY TEX
 		_Secondarytex = FindProperty("_Secondarytex", _properties);
 		_Secondarytexopacity = FindProperty("_Secondarytexopacity", _properties);
-		_Invertsecondarytex = FindProperty("_Invertsecondarytex", _properties);
-		_Invertsecondarytexalpha = FindProperty("_Invertsecondarytexalpha", _properties);
 		_Secondarytextiling = FindProperty("_Secondarytextiling", _properties);
 		_Secondarytexoffset = FindProperty("_Secondarytexoffset", _properties);
 		_Secondarytexscrollrotate = FindProperty("_Secondaryscrollrotate", _properties);
@@ -128,7 +119,6 @@ public class RadialProgressBarEditor : ShaderGUI
 		//NOISE TEX
 		_Noisetex = FindProperty("_Noisetex", _properties);
 		_Noiseintensity = FindProperty("_Noiseintensity", _properties);
-		_Invertnoisetex = FindProperty("_Invertnoisetex", _properties);
 		_Noisetexspeed = FindProperty("_Noisetexspeed", _properties);
 		_Noisetextiling = FindProperty("_Noisetextiling", _properties);
 		_Noisetexoffset = FindProperty("_Noisetexoffset", _properties);
@@ -223,8 +213,6 @@ public class RadialProgressBarEditor : ShaderGUI
 
 				EditorGUILayout.BeginVertical(EditorStyles.helpBox);
 				_materialEditor.ShaderProperty(_Maintexopacity, "Opacity");
-				_materialEditor.ShaderProperty(_Invertmaintex, "Invert color channels");
-				_materialEditor.ShaderProperty(_Invertmaintexalpha, "Invert alpha channel");
 				EditorGUILayout.EndVertical();
 
 				EditorGUILayout.BeginVertical(EditorStyles.helpBox);
@@ -252,8 +240,6 @@ public class RadialProgressBarEditor : ShaderGUI
 
 				EditorGUILayout.BeginVertical(EditorStyles.helpBox);
 				_materialEditor.ShaderProperty(_Secondarytexopacity, "Opacity");
-				_materialEditor.ShaderProperty(_Invertsecondarytex, "Invert color channels");
-				_materialEditor.ShaderProperty(_Invertsecondarytexalpha, "Invert alpha channel");
 				EditorGUILayout.EndVertical();
 
 				EditorGUILayout.BeginVertical(EditorStyles.helpBox);
@@ -278,7 +264,6 @@ public class RadialProgressBarEditor : ShaderGUI
 				_materialEditor.TexturePropertySingleLine(new GUIContent("Texture"), _Noisetex);
 				EditorGUILayout.BeginVertical(EditorStyles.helpBox);
 				_materialEditor.ShaderProperty(_Noiseintensity, "Intensity multiplier");
-				_materialEditor.ShaderProperty(_Invertnoisetex, "Invert color channels");
 				EditorGUILayout.EndVertical();
 
 				EditorGUILayout.BeginVertical(EditorStyles.helpBox);
