@@ -14,11 +14,12 @@ public class DestinationBar : MonoBehaviour {
 	public float frequency;
 	public Text descriptionText;
 	private bool flashing;
-	private float initialRadius = 0f;
+	private float initialRadius;
 	private float radius;
 	private Color descriptionTextNormalColor;
 	public Color descriptionTextHighlightColor;
 	void Start () {
+		initialRadius = mat.GetFloat("_Radius");
 		descriptionTextNormalColor = descriptionText.color;
 		radius = initialRadius;
 		mat.SetFloat("_Radius", radius);
@@ -39,5 +40,9 @@ public class DestinationBar : MonoBehaviour {
 			radius = amplitude*Mathf.Sin(Time.time*frequency) + offset;
 			mat.SetFloat("_Radius", radius);
 		}
+	}
+
+	private void OnApplicationQuit() {
+		mat.SetFloat("_Radius", initialRadius);
 	}
 }

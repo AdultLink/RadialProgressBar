@@ -9,7 +9,6 @@ namespace AdultLink
 public class HealBar : MonoBehaviour {
 
 	public Material mat;
-	private float initialHP = 0f;
 	public float fillTime = 5f;
 	public float decreaseTime = 2.5f;
 	private float increaseAmount;
@@ -20,11 +19,13 @@ public class HealBar : MonoBehaviour {
 	public Color defaultTextColor;
 	public Color highlightColor;
 	public Text descriptionText;
+	private float initialFillPercentage;
 	// Use this for initialization
 	
 	// Update is called once per frame
 	private void Start() {
-		fillPercentage = initialHP;
+		initialFillPercentage = mat.GetFloat("_Fillpercentage");
+		fillPercentage = initialFillPercentage;
 		mat.SetFloat("_Fillpercentage", fillPercentage);
 		increaseAmount = 1f / fillTime * Time.fixedDeltaTime;
 		decreaseAmount = 1f / decreaseTime * Time.fixedDeltaTime;
@@ -68,6 +69,9 @@ public class HealBar : MonoBehaviour {
 		descriptionText.color = defaultTextColor;
 	}
 
+	private void OnApplicationQuit() {
+		mat.SetFloat("_Fillpercentage", initialFillPercentage);
+	}
 
 }
 

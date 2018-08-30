@@ -39,15 +39,16 @@ public class SpeedBar : MonoBehaviour {
 
 	//--
 	private float fillPercentage;
-	private float initialValue = 0f;
+	private float initialFillPercentage;
 	private Color initialMaxColor;
 
 	private Status status;
 
 	void Start() {
+		initialFillPercentage = mat.GetFloat("_Fillpercentage");
 		initialRotationSpeed = mat.GetFloat("_Maintexrotationspeed");
 		initialMaxColor = mat.GetColor("_Barmaxcolor");
-		fillPercentage = initialValue;
+		fillPercentage = initialFillPercentage;
 		targetColor = initialMaxColor;
 		status = Status.idle;
 		accelAmount = 1f / accelTime * Time.fixedDeltaTime;
@@ -130,6 +131,11 @@ public class SpeedBar : MonoBehaviour {
 
 	private void setRotation(float multiplier) {
 		mat.SetFloat("_Maintexrotationspeed", initialRotationSpeed*multiplier);
+	}
+
+	private void OnApplicationQuit() {
+		fillPercentage = initialFillPercentage;
+		mat.SetFloat("_Fillpercentage", fillPercentage);
 	}
 
 }

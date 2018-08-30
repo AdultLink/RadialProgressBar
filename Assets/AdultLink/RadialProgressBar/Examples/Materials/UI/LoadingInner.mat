@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Destination
+  m_Name: LoadingInner
   m_Shader: {fileID: 4800000, guid: 14d4a9d5643343d4d949abbc67178b2a, type: 3}
   m_ShaderKeywords: _INVERTSECONDARYTEXALPHA_ON _INVERTSECONDARYTEX_ON _MAINSCROLLROTATE_SCROLL
     _SCROLLROTATE_NONE _SECONDARYSCROLLROTATE_ROTATE
@@ -90,10 +90,10 @@ Material:
     m_Floats:
     - PixelSnap: 0
     - _ASEOutlineWidth: 8.9
-    - _Arcrange: 360
+    - _Arcrange: 90
     - _BGwidth: 0.023
     - _Backgroundborderopacity: 1
-    - _Backgroundborderradialwidth: 0
+    - _Backgroundborderradialwidth: 0.012
     - _Backgroundbordertangentwidth: 0
     - _Backgroundborderwidth: 0.0405
     - _Backgroundopacity: 1
@@ -108,7 +108,7 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _Fillpercentage: 1
-    - _Globalopacity: 0.75
+    - _Globalopacity: 0.9
     - _Globaltransp: 1
     - _Globaltransparency: 1
     - _GlossMapScale: 1
@@ -128,9 +128,10 @@ Material:
     - _MainTexRotationSpeed: 1
     - _MainbarBorderWidth: 0.033
     - _Mainbarborderopacity: 1
-    - _Mainborderradialwidth: 0.031
+    - _Mainborderradialwidth: 0
     - _Mainbordertangentwidth: 0
     - _Mainscrollrotate: 0
+    - _Maintexcontrast: 1
     - _Maintexopacity: 1
     - _Maintexrotationspeed: 1
     - _Maintextureopacity: 1
@@ -138,15 +139,17 @@ Material:
     - _Mode: 0
     - _Niseintensity: 5.01
     - _Noiseintensity: 10
+    - _Noisetexcontrast: 1
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _Radius: 0.1
+    - _Radius: 0.127
     - _Rotate: 0
-    - _Rotation: 0
+    - _Rotation: 360
     - _RotationSpeed: -0.08
     - _Scrollrotate: 2
     - _SecondaryTexRotationSpeed: 1
     - _Secondaryscrollrotate: 1
+    - _Secondarytexcontrast: 1
     - _Secondarytexopacity: 1
     - _Secondarytexrotationspeed: -0.05
     - _SmoothnessTextureChannel: 0
@@ -165,14 +168,14 @@ Material:
     - _ASEOutlineColor: {r: 0.9117647, g: 0.24805364, b: 0.24805364, a: 1}
     - _BGColor: {r: 1, g: 1, b: 1, a: 1}
     - _BackgroundColor: {r: 0.049199797, g: 0.5807034, b: 0.9558824, a: 1}
-    - _Backgroundbordercolor: {r: 0.21950683, g: 0.5362239, b: 0.85294116, a: 0}
-    - _Backgroundfillcolor: {r: 0.058282807, g: 0.5259269, b: 0.7205882, a: 0}
-    - _Barmaxcolor: {r: 1.2088236, g: 0.22221021, b: 0.22221021, a: 1}
-    - _Barmincolor: {r: 1.2, g: 0.22117646, b: 0.22117646, a: 1}
+    - _Backgroundbordercolor: {r: 0.46323532, g: 0.46323532, b: 0.46323532, a: 1}
+    - _Backgroundfillcolor: {r: 0.4044118, g: 0.4044118, b: 0.4044118, a: 1}
+    - _Barmaxcolor: {r: 1, g: 1, b: 1, a: 1}
+    - _Barmincolor: {r: 1, g: 1, b: 1, a: 1}
     - _Barsecondarymaxcolor: {r: 0, g: 0, b: 0, a: 1}
     - _Barsecondarymincolor: {r: 0, g: 0, b: 0, a: 0}
     - _Bordercolor: {r: 0.42388234, g: 1.201, b: 0.59002465, a: 1}
-    - _Bordermaxcolor: {r: 1.2, g: 0.2211764, b: 0.2211764, a: 0.093}
+    - _Bordermaxcolor: {r: 1.2, g: 0.22117636, b: 0.22117636, a: 1}
     - _Bordermincolor: {r: 1.2, g: 0.22117642, b: 0.22117642, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Color0: {r: 0.6824544, g: 0.2573529, b: 1, a: 0}
