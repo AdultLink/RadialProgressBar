@@ -39,6 +39,7 @@ public class RainbowStrip : MonoBehaviour {
 			scale.Scale(Vector3.one*(1-scaleAmount));
 			scale = new Vector3(Mathf.Clamp(scale.x, 0f, initialScale.x), Mathf.Clamp(scale.y, 0f, initialScale.y), Mathf.Clamp(scale.z, 0f, initialScale.z));
 			transform.localScale = scale;
+			mat.SetFloat("_Globalopacity", scale.x/initialScale.x);
 			if (Vector3.Magnitude(scale) < scaleThreshold) {
 				stripStatus = StripStatus.waiting;
 				rainbowController.reportShrunk();
@@ -48,6 +49,7 @@ public class RainbowStrip : MonoBehaviour {
 
 	public void startFillSequence() {
 		fillPercentage = 0;
+		mat.SetFloat("_Globalopacity", 1f);
 		mat.SetFloat("_Fillpercentage", 0f);
 		scale = initialScale;
 		transform.localScale = scale;

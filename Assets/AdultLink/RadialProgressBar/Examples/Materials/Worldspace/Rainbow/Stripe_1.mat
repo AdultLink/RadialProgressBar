@@ -8,8 +8,8 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: Stripe_1
   m_Shader: {fileID: 4800000, guid: 5c0420a139d72394fb0ce7d877b7d215, type: 3}
-  m_ShaderKeywords: _INVERTSECONDARYTEXALPHA_ON _INVERTSECONDARYTEX_ON _MAINSCROLLROTATE_SCROLL
-    _SCROLLROTATE_NONE _SECONDARYSCROLLROTATE_NONE
+  m_ShaderKeywords: _INVERTSECONDARYTEXALPHA_ON _MAINSCROLLROTATE_SCROLL _SCROLLROTATE_NONE
+    _SECONDARYSCROLLROTATE_NONE
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -118,7 +118,7 @@ Material:
     - _Invertmaintex: 0
     - _Invertmaintexalpha: 0
     - _Invertnoisetex: 0
-    - _Invertsecondarytex: 1
+    - _Invertsecondarytex: 0
     - _Invertsecondarytexalpha: 1
     - _MainTexRotationSpeed: 1
     - _MainbarBorderWidth: 0.033
@@ -126,6 +126,7 @@ Material:
     - _Mainborderradialwidth: 0
     - _Mainbordertangentwidth: 0
     - _Mainscrollrotate: 0
+    - _Maintexcontrast: 1
     - _Maintexopacity: 1
     - _Maintexrotationspeed: 1
     - _Maintextureopacity: 1
@@ -133,6 +134,7 @@ Material:
     - _Mode: 0
     - _Niseintensity: 5.01
     - _Noiseintensity: 10
+    - _Noisetexcontrast: 1
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _Radius: 1
@@ -141,6 +143,7 @@ Material:
     - _Scrollrotate: 2
     - _SecondaryTexRotationSpeed: 1
     - _Secondaryscrollrotate: 2
+    - _Secondarytexcontrast: 1
     - _Secondarytexopacity: 1
     - _Secondarytexrotationspeed: 1
     - _SmoothnessTextureChannel: 0
