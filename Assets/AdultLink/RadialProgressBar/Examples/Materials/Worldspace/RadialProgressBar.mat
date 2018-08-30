@@ -85,7 +85,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _ASEOutlineWidth: 8.9
-    - _Arcrange: 360
+    - _Arcrange: 270
     - _BGwidth: 0.023
     - _Backgroundborderopacity: 0.75
     - _Backgroundborderradialwidth: 0.036
@@ -103,7 +103,7 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _Fillpercentage: 1
+    - _Fillpercentage: 0.994
     - _Globalopacity: 1
     - _Globaltransp: 1
     - _Globaltransparency: 1
@@ -124,8 +124,8 @@ Material:
     - _MainTexRotationSpeed: 1
     - _MainbarBorderWidth: 0.033
     - _Mainbarborderopacity: 1
-    - _Mainborderradialwidth: 0.039
-    - _Mainbordertangentwidth: 0
+    - _Mainborderradialwidth: 0.017
+    - _Mainbordertangentwidth: 0.101
     - _Mainscrollrotate: 0
     - _Maintexcontrast: 0.8
     - _Maintexopacity: 0
@@ -139,7 +139,7 @@ Material:
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _Radius: 0.32
-    - _Rotation: 0
+    - _Rotation: 45
     - _RotationSpeed: -0.08
     - _Scrollrotate: 2
     - _SecondaryTexRotationSpeed: 1
