@@ -74,6 +74,16 @@ It is important to note that the noise texture will be MULTIPLIED with the secon
 
 # Examples
 
+![Example1](Screenshots/Example1.gif)
+
+![Example2](Screenshots/Example2.gif)
+
+![Example3](Screenshots/Example3.gif)
+
+![Example4](Screenshots/Example4.gif)
+
+![Example5](Screenshots/Example5.gif)
+
 # Donate [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/adultlink/5usd)
 
 This piece of software is offered for free because I believe the gamedev community can benefit from it, and it should not be behind a paywall. I learned from the community, and now I am giving back.
