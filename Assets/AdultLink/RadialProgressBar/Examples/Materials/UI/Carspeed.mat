@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Carspeed
-  m_Shader: {fileID: 4800000, guid: d9ecb8f62eacf3745a90d02a295701ad, type: 3}
+  m_Shader: {fileID: 4800000, guid: 5c0420a139d72394fb0ce7d877b7d215, type: 3}
   m_ShaderKeywords: _INVERTSECONDARYTEXALPHA_ON _INVERTSECONDARYTEX_ON _MAINSCROLLROTATE_ROTATE
     _SCROLLROTATE_NONE _SECONDARYSCROLLROTATE_ROTATE
   m_LightmapFlags: 4
@@ -107,7 +107,7 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _Fillpercentage: 0.177
+    - _Fillpercentage: 0.228
     - _Globalopacity: 0.898
     - _Globaltransp: 1
     - _Globaltransparency: 1
@@ -170,7 +170,7 @@ Material:
     - _BackgroundColor: {r: 0.049199797, g: 0.5807034, b: 0.9558824, a: 1}
     - _Backgroundbordercolor: {r: 0.084441185, g: 0.36122048, b: 0.638, a: 1}
     - _Backgroundfillcolor: {r: 0.06074994, g: 0.27548018, b: 0.486, a: 1}
-    - _Barmaxcolor: {r: 0.24479455, g: 1.0005687, b: 1.4475279, a: 1}
+    - _Barmaxcolor: {r: 0.18602178, g: 0.7603486, b: 1.1, a: 1}
     - _Barmincolor: {r: 0.039215688, g: 0.40392157, b: 0.61960787, a: 1}
     - _Barsecondarymaxcolor: {r: 0, g: 0, b: 0, a: 1}
     - _Barsecondarymincolor: {r: 0, g: 0, b: 0, a: 0}

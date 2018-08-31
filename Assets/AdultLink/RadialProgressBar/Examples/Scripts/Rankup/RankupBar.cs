@@ -25,7 +25,7 @@ public class RankupBar : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKeyDown (KeyCode.Q)) {
+		if (Input.GetKeyDown (KeyCode.R)) {
 			fillUp = true;
 		}
 		if (Input.GetKeyDown (KeyCode.D)) {

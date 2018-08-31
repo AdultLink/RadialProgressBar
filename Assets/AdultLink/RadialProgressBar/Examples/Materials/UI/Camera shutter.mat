@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Camera shutter
-  m_Shader: {fileID: 4800000, guid: d9ecb8f62eacf3745a90d02a295701ad, type: 3}
+  m_Shader: {fileID: 4800000, guid: 85824a3a3edd49444a33e7bd800be709, type: 3}
   m_ShaderKeywords: _INVERTSECONDARYTEXALPHA_ON _MAINSCROLLROTATE_SCROLL _SCROLLROTATE_NONE
     _SECONDARYSCROLLROTATE_ROTATE
   m_LightmapFlags: 4

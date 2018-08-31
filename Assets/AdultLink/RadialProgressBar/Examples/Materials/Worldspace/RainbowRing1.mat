@@ -6,11 +6,10 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Destination
-  m_Shader: {fileID: 4800000, guid: 85824a3a3edd49444a33e7bd800be709, type: 3}
-  m_ShaderKeywords: _INVERTSECONDARYTEXALPHA_ON _INVERTSECONDARYTEX_ON _MAINSCROLLROTATE_SCROLL
-    _SCROLLROTATE_NONE _SECONDARYSCROLLROTATE_ROTATE
-  m_LightmapFlags: 4
+  m_Name: RainbowRing1
+  m_Shader: {fileID: 4800000, guid: 5c0420a139d72394fb0ce7d877b7d215, type: 3}
+  m_ShaderKeywords: _INVERTSECONDARYTEXALPHA_ON _MAINSCROLLROTATE_ROTATE _SECONDARYSCROLLROTATE_SCROLL
+  m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -19,10 +18,6 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _AlphaTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _Bartexture:
         m_Texture: {fileID: 2800000, guid: 590b7ebd14c1b5947b509330497fd817, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -52,7 +47,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Maintex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 6d789549177fb9246ba323c44377047d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -60,7 +55,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Noisetex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 86ad23c623f950a4997067186e283be5, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -72,7 +67,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Secondarytex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 590b7ebd14c1b5947b509330497fd817, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TextureSample0:
@@ -88,7 +83,6 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - PixelSnap: 0
     - _ASEOutlineWidth: 8.9
     - _Arcrange: 360
     - _BGwidth: 0.023
@@ -108,7 +102,7 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _Fillpercentage: 1
-    - _Globalopacity: 0.75
+    - _Globalopacity: 1
     - _Globaltransp: 1
     - _Globaltransparency: 1
     - _GlossMapScale: 1
@@ -123,32 +117,29 @@ Material:
     - _Invertmaintex: 0
     - _Invertmaintexalpha: 0
     - _Invertnoisetex: 0
-    - _Invertsecondarytex: 1
+    - _Invertsecondarytex: 0
     - _Invertsecondarytexalpha: 1
-    - _MainTexRotationSpeed: 1
     - _MainbarBorderWidth: 0.033
     - _Mainbarborderopacity: 1
-    - _Mainborderradialwidth: 0.031
+    - _Mainborderradialwidth: 0
     - _Mainbordertangentwidth: 0
-    - _Mainscrollrotate: 0
+    - _Mainscrollrotate: 1
+    - _Maintexcontrast: 0.25
     - _Maintexopacity: 1
     - _Maintexrotationspeed: 1
-    - _Maintextureopacity: 1
     - _Metallic: 0
     - _Mode: 0
     - _Niseintensity: 5.01
     - _Noiseintensity: 10
+    - _Noisetexcontrast: 1
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _Radius: 0.1
-    - _Rotate: 0
-    - _Rotation: 0
-    - _RotationSpeed: -0.08
-    - _Scrollrotate: 2
-    - _SecondaryTexRotationSpeed: 1
-    - _Secondaryscrollrotate: 1
+    - _Radius: 0.159
+    - _Rotation: 90
+    - _Secondaryscrollrotate: 0
+    - _Secondarytexcontrast: 1
     - _Secondarytexopacity: 1
-    - _Secondarytexrotationspeed: -0.05
+    - _Secondarytexrotationspeed: 1
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
@@ -165,32 +156,32 @@ Material:
     - _ASEOutlineColor: {r: 0.9117647, g: 0.24805364, b: 0.24805364, a: 1}
     - _BGColor: {r: 1, g: 1, b: 1, a: 1}
     - _BackgroundColor: {r: 0.049199797, g: 0.5807034, b: 0.9558824, a: 1}
-    - _Backgroundbordercolor: {r: 0.21950683, g: 0.5362239, b: 0.85294116, a: 0}
-    - _Backgroundfillcolor: {r: 0.058282807, g: 0.5259269, b: 0.7205882, a: 0}
-    - _Barmaxcolor: {r: 1.2088236, g: 0.22221021, b: 0.22221021, a: 1}
-    - _Barmincolor: {r: 1.2, g: 0.22117646, b: 0.22117646, a: 1}
-    - _Barsecondarymaxcolor: {r: 0, g: 0, b: 0, a: 1}
-    - _Barsecondarymincolor: {r: 0, g: 0, b: 0, a: 0}
+    - _Backgroundbordercolor: {r: 0.049198784, g: 0.5807034, b: 0.9558824, a: 1}
+    - _Backgroundfillcolor: {r: 1.3, g: 0.036254942, b: 1.055966, a: 1}
+    - _Barmaxcolor: {r: 0.036254942, g: 1.3, b: 0.41434252, a: 1}
+    - _Barmincolor: {r: 0.03633861, g: 0.831278, b: 1.303, a: 1}
+    - _Barsecondarymaxcolor: {r: 0, g: 0.46323526, b: 0.27155054, a: 1}
+    - _Barsecondarymincolor: {r: 1, g: 0.35172284, b: 0, a: 1}
     - _Bordercolor: {r: 0.42388234, g: 1.201, b: 0.59002465, a: 1}
-    - _Bordermaxcolor: {r: 1.2, g: 0.2211764, b: 0.2211764, a: 0.093}
-    - _Bordermincolor: {r: 1.2, g: 0.22117642, b: 0.22117642, a: 1}
+    - _Bordermaxcolor: {r: 0.011137554, g: 0.75735295, b: 0.23242843, a: 1}
+    - _Bordermincolor: {r: 0.81617653, g: 0, b: 0, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Color0: {r: 0.6824544, g: 0.2573529, b: 1, a: 0}
     - _Color1: {r: 0, g: 0.95862055, b: 1, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Maintexoffset: {r: 0, g: 0, b: 0, a: 0}
-    - _Maintexscrollspeed: {r: 2, g: 0, b: 0, a: 0}
+    - _Maintexscrollspeed: {r: 0, g: 0, b: 0, a: 0}
     - _Maintexspeed: {r: -0.01, g: 0, b: 0, a: 0}
-    - _Maintextiling: {r: 1.5, g: 1.5, b: 0, a: 0}
+    - _Maintextiling: {r: 1, g: 1, b: 0, a: 0}
     - _Maxcolor: {r: 0, g: 1, b: 0.50344807, a: 0}
     - _Mincolor: {r: 1, g: 0.2573529, b: 0.42636916, a: 0}
     - _Noisetexoffset: {r: 0, g: 0, b: 0, a: 0}
-    - _Noisetexspeed: {r: -0.5, g: 0, b: 0, a: 0}
+    - _Noisetexspeed: {r: -0.5, g: 0.5, b: 0, a: 0}
     - _Noisetextiling: {r: 1, g: 1, b: 0, a: 0}
     - _Secondarytexoffset: {r: 0, g: 0, b: 0, a: 0}
-    - _Secondarytexscrollspeed: {r: -0.5, g: -0.15, b: 0, a: 0}
+    - _Secondarytexscrollspeed: {r: 0, g: 0, b: 0, a: 0}
     - _Secondarytexspeed: {r: -0.01, g: -0.01, b: 0, a: 0}
-    - _Secondarytextiling: {r: 0.2, g: 0.2, b: 0, a: 0}
+    - _Secondarytextiling: {r: 0.5, g: 0.5, b: 0, a: 0}
     - _Texturescrollingspeed: {r: -0.01, g: 0, b: 0, a: 0}
     - _Vector1: {r: -0.05, g: -0.05, b: 0, a: 0}
     - _Vector2: {r: -0.5, g: 0.5, b: 0, a: 0}
