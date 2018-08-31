@@ -25,8 +25,9 @@ Disclaimer: The scripts controlling the behavior of the examples provided are no
    - 2.2 [Background settings](#background-settings)
    - 2.3 [Bar settings](#bar-settings)
 3. [Examples](#examples)
-4. [Donate](#donate)
-5. [License](#license)
+4. [Parameters list](#parameters-list)
+5. [Donate](#donate)
+6. [License](#license)
 
 # Getting started
 
@@ -82,6 +83,90 @@ It is important to note that the noise texture will be MULTIPLIED with the secon
 
 ![Example3](Screenshots/Example3.gif)
 
+# Parameters list
+
+<details><summary>"Standard version" - Click to expand</summary><p>
+
+```C#
+
+//MAIN SETTINGS
+_Radius
+_Arcrange
+_Fillpercentage
+_Globalopacity
+_Rotation
+
+//BACKGROUND
+_Backgroundfillcolor
+_Backgroundopacity
+_Backgroundbordercolor
+_Backgroundborderopacity
+_Backgroundborderradialwidth
+_Backgroundbordertangentwidth
+
+//BAR - BORDER
+_Bordermincolor
+_Bordermaxcolor
+_Mainbarborderopacity
+_Mainborderradialwidth
+_Mainbordertangentwidth
+
+//BAR - MAIN TEXTURE
+_Maintex
+_Barmincolor
+_Barmaxcolor
+_Maintexopacity
+_Maintexcontrast
+_Invertmaintex
+_Mainscrollrotate
+_Maintexscrollspeed
+_Maintexrotationspeed
+_Maintextiling
+_Maintexoffset
+
+//BAR - SECONDARY TEXTURE
+_Secondarytex
+_Barsecondarymincolor
+_Barsecondarymaxcolor
+_Secondarytexopacity
+_Secondarytexcontrast
+_Invertsecondarytex
+_Secondaryscrollrotate
+_Secondarytexscrollspeed
+_Secondarytexrotationspeed
+_Secondarytextiling
+_Secondarytexoffset
+
+//BAR - NOISE TEXTURE
+_Noisetex
+_Noiseintensity
+_Noisetexcontrast
+_Invertnoisetex
+_Noisetexspeed
+_Noisetextiling
+_Noisetexoffset
+
+```
+
+</p></details>
+
+<details><summary>"Simplified version" - Click to expand</summary><p>
+ 
+```C#
+
+//MAIN SETTINGS
+_Radius
+_Arcrange
+_Fillpercentage
+_Globalopacity
+_Rotation
+
+//BAR
+_Barmincolor
+_Barmaxcolor
+```
+
+</p></details>
 
 # Donate [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/adultlink/5usd)
 
