@@ -74,15 +74,14 @@ It is important to note that the noise texture will be MULTIPLIED with the secon
 
 # Examples
 
+![Example4](Screenshots/Example4.gif) ![Example5](Screenshots/Example5.gif)
+
 ![Example1](Screenshots/Example1.gif)
 
 ![Example2](Screenshots/Example2.gif)
 
 ![Example3](Screenshots/Example3.gif)
 
-![Example4](Screenshots/Example4.gif)
-
-![Example5](Screenshots/Example5.gif)
 
 # Donate [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/adultlink/5usd)
 
