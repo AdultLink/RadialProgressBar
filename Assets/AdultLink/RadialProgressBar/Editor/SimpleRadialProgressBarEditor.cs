@@ -30,8 +30,45 @@ public class SimpleRadialProgressBarEditor : ShaderGUI
 		DrawGUI();
 	}
 
+	static Texture2D bannerTexture = null;
+    static GUIStyle title = null;
+    static GUIStyle linkStyle = null;
+    static string repoURL = "https://github.com/adultlink/radialprogressbar";
+
+	void DrawBanner()
+    {
+        if (bannerTexture == null)
+            bannerTexture = Resources.Load<Texture2D>("RadialProgressBarBanner");
+
+        if (title == null)
+        {
+            title = new GUIStyle();
+            title.fontSize = 20;
+            title.alignment = TextAnchor.MiddleCenter;
+            title.normal.textColor = new Color(1f, 1f, 1f);
+        }
+		
+
+        if (linkStyle == null) linkStyle = new GUIStyle();
+
+        if (bannerTexture != null)
+        {
+            GUILayout.Space(4);
+            var rect = GUILayoutUtility.GetRect(0, int.MaxValue, 60, 60);
+            EditorGUI.DrawPreviewTexture(rect, bannerTexture, null, ScaleMode.ScaleAndCrop);
+            //
+            EditorGUI.LabelField(rect, "Radial progress bar", title);
+
+            if (GUI.Button(rect, "", linkStyle)) {
+                Application.OpenURL(repoURL);
+            }
+            GUILayout.Space(4);
+        }
+    }
+
 	void DrawGUI() {
 		GetProperties();
+		DrawBanner();
 
 		startFoldout();
 		ShowMainSettings = EditorGUILayout.Foldout(ShowMainSettings, "General");
