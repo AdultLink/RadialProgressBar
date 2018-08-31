@@ -1,9 +1,10 @@
-# RadialHPBar [![License](https://img.shields.io/badge/License-MIT-lightgrey.svg?style=flat)](http://adultlink.mit-license.org) [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/adultlink/5usd)
+# RadialProgressBar [![License](https://img.shields.io/badge/License-MIT-lightgrey.svg?style=flat)](http://adultlink.mit-license.org) [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/adultlink/5usd)
+
 ![IntroImage](Screenshots/AllInterfaceExamples.gif)
 
 This shader allows you to create shiny looking radial progress bars that can be used to display information like character HP, loading status, matchmaking rating progress, car speed, etc. The possibilities are endless.
 
-It can be edited through [Amplify Shader Editor](http://amplify.pt/unity/amplify-shader-editor) and contributions to the project are always welcome!
+THe shader can be edited through [Amplify Shader Editor](http://amplify.pt/unity/amplify-shader-editor) and contributions to the project are always welcome!
 
 ---
 
@@ -15,17 +16,25 @@ _(Beware: The screenshots folder is quite heavy at the moment, I need to find a 
 
 You can also just download a **unitypackage** from the releases tab and easily import everything to your project. This will not download the _screenshots_ folder.
 
+Disclaimer: The scripts controlling the behavior of the examples provided are not optimized in any way and should not only be taken as quick & dirty examples.
+
 # Table of contents
 1. [Getting started](#getting-started)
 2. [Usage & parameters](#usage-parameters)
    - 2.1 [General settings](#general-settings)
-   - 2.2 [Emission](#emission)
+   - 2.2 [Background settings](#emission)
+   - 2.3 [Bar settings](#emission)
 3. [Examples](#examples)
 4. [Donate](#donate)
 5. [License](#license)
 
-# Setup
-## Getting started
+# Getting started
+
+To get this shader up and running you only need to attach it to a material, and drop that material onto a quad. That's it, you now have a basic HP Bar!
+
+![BasicSetup](Screenshots/BasicSetup.png)
+
+Best is to check the examples provided to get an idea on how to tweak the different parameters, and to take inspiration from them.
 
 # Donate [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/adultlink/5usd)
 
