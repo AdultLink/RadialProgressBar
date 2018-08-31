@@ -20,10 +20,10 @@ Disclaimer: The scripts controlling the behavior of the examples provided are no
 
 # Table of contents
 1. [Getting started](#getting-started)
-2. [Usage & parameters](#usage-parameters)
+2. [Usage & parameters](#usage-and-parameters)
    - 2.1 [General settings](#general-settings)
-   - 2.2 [Background settings](#emission)
-   - 2.3 [Bar settings](#emission)
+   - 2.2 [Background settings](#background-settings)
+   - 2.3 [Bar settings](#bar-settings)
 3. [Examples](#examples)
 4. [Donate](#donate)
 5. [License](#license)
@@ -35,6 +35,44 @@ To get this shader up and running you only need to attach it to a material, and 
 ![BasicSetup](Screenshots/BasicSetup.png)
 
 Best is to check the examples provided to get an idea on how to tweak the different parameters, and to take inspiration from them.
+
+This shader comes in two variants; "standard" (the one that will be described here) and "simple". The second one is a simplified version of the first one, which does away with many of the settings.
+
+# Usage and parameters
+
+## General settings
+
+These are settings that affect the whole bar, and they are pretty much self-explanatory. By increasing and decreasing `Fill percentage`, we control the amount of that bar that is filled. This is the main setting for this shader.
+
+![GeneralSettings](Screenshots/GeneralSettings.jpg)
+
+`Rotation` and `Arc range` (0-360) allows you to control the starting and ending angles.
+
+## Background settings
+
+"Background" will always be visible regardless of the fill percentage (unless you turn the opacity all the way down to 0, of course).
+
+![BackgroundSettings](Screenshots/BackgroundSettings.jpg)
+
+Here, we can set both the color for the "fill" area of the background, as well as for the border. Additionally, border radial (along the circle) and tangential widths can be set, as well as its opacity.
+
+## Bar settings
+
+This is the meat of the shader, and it is divided into two sections: `Border` and `Fill`. Border settings are very similar to the ones already described for the background, with the caveat that it is possible to specify a `Color (min)` and a `Color (max)`, so that the bar will lerp between them as is fills up.
+
+![BarSettings](Screenshots/BarSettings.jpg)
+
+Fill settings, on the other hand, are comprised of three more sections: `Main texture`, `Secondary texture` and `Noise texture`.
+
+If you don't want to use any texture, just leave the slot empty.
+
+They all provide similar parameters to play with, like `opacity` and `contrast`, `tiling` and `offset`. You can make these textures scroll or rotate (which is quite handy for a radial bar) via a dropdown button. Rotation/scrolling speed is customizable.
+
+Again, bar color will lerp between min and max colors. If you don't want this to happen, simply give them both the same value.
+
+It is important to note that the noise texture will be MULTIPLIED with the secondary texture, and the result will be ADDED to the main texture. This gives you some room to get creative.
+
+# Examples
 
 # Donate [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/adultlink/5usd)
 
