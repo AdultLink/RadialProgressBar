@@ -6,11 +6,11 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Carspeed
-  m_Shader: {fileID: 4800000, guid: d9ecb8f62eacf3745a90d02a295701ad, type: 3}
-  m_ShaderKeywords: _INVERTSECONDARYTEXALPHA_ON _INVERTSECONDARYTEX_ON _MAINSCROLLROTATE_ROTATE
-    _SCROLLROTATE_NONE _SECONDARYSCROLLROTATE_ROTATE
-  m_LightmapFlags: 4
+  m_Name: HPBar
+  m_Shader: {fileID: 4800000, guid: 5c0420a139d72394fb0ce7d877b7d215, type: 3}
+  m_ShaderKeywords: _INVERTSECONDARYTEXALPHA_ON _MAINSCROLLROTATE_SCROLL _SCROLLROTATE_NONE
+    _SECONDARYSCROLLROTATE_SCROLL
+  m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -19,10 +19,6 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _AlphaTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _Bartexture:
         m_Texture: {fileID: 2800000, guid: 590b7ebd14c1b5947b509330497fd817, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -60,7 +56,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Noisetex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: bf116699b9b45144b9288c1cac5ad626, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -72,7 +68,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Secondarytex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 1db94e739e1d1054aa96d114b857e9fc, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TextureSample0:
@@ -88,15 +84,14 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - PixelSnap: 0
     - _ASEOutlineWidth: 8.9
     - _Arcrange: 270
     - _BGwidth: 0.023
-    - _Backgroundborderopacity: 1
-    - _Backgroundborderradialwidth: 0.05
-    - _Backgroundbordertangentwidth: 0.175
+    - _Backgroundborderopacity: 0.75
+    - _Backgroundborderradialwidth: 0.036
+    - _Backgroundbordertangentwidth: 0
     - _Backgroundborderwidth: 0.0405
-    - _Backgroundopacity: 1
+    - _Backgroundopacity: 0.9
     - _Backgroundwidth: 0.047
     - _BarRadius: 0.246
     - _Borderwidth: 0.033
@@ -104,11 +99,12 @@ Material:
     - _Borderwidth3: 0.127
     - _BumpScale: 1
     - _ColorMask: 15
+    - _Contrast: 0.8
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _Fillpercentage: 0.177
-    - _Globalopacity: 0.898
+    - _Fillpercentage: 0.904
+    - _Globalopacity: 1
     - _Globaltransp: 1
     - _Globaltransparency: 1
     - _GlossMapScale: 1
@@ -123,35 +119,34 @@ Material:
     - _Invertmaintex: 0
     - _Invertmaintexalpha: 0
     - _Invertnoisetex: 0
-    - _Invertsecondarytex: 1
+    - _Invertsecondarytex: 0
     - _Invertsecondarytexalpha: 1
     - _MainTexRotationSpeed: 1
     - _MainbarBorderWidth: 0.033
     - _Mainbarborderopacity: 1
-    - _Mainborderradialwidth: 0
-    - _Mainbordertangentwidth: 0.17
-    - _Mainscrollrotate: 1
-    - _Maintexcontrast: 1
-    - _Maintexopacity: 1
-    - _Maintexrotationspeed: -0.4
+    - _Mainborderradialwidth: 0.017
+    - _Mainbordertangentwidth: 0.101
+    - _Mainscrollrotate: 0
+    - _Maintexcontrast: 0.8
+    - _Maintexopacity: 0
+    - _Maintexrotationspeed: 1
     - _Maintextureopacity: 1
     - _Metallic: 0
     - _Mode: 0
     - _Niseintensity: 5.01
-    - _Noiseintensity: 10
-    - _Noisetexcontrast: 1
+    - _Noiseintensity: 1
+    - _Noisetexcontrast: 0.8
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _Radius: 0.256
-    - _Rotate: 0
     - _Rotation: 45
     - _RotationSpeed: -0.08
     - _Scrollrotate: 2
     - _SecondaryTexRotationSpeed: 1
-    - _Secondaryscrollrotate: 1
+    - _Secondaryscrollrotate: 0
     - _Secondarytexcontrast: 1
     - _Secondarytexopacity: 1
-    - _Secondarytexrotationspeed: -0.05
+    - _Secondarytexrotationspeed: 1
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
@@ -163,37 +158,37 @@ Material:
     - _UVSec: 0
     - _UseUIAlphaClip: 0
     - _ZWrite: 1
-    - __dirty: 1
+    - __dirty: 0
     m_Colors:
     - _ASEOutlineColor: {r: 0.9117647, g: 0.24805364, b: 0.24805364, a: 1}
     - _BGColor: {r: 1, g: 1, b: 1, a: 1}
     - _BackgroundColor: {r: 0.049199797, g: 0.5807034, b: 0.9558824, a: 1}
-    - _Backgroundbordercolor: {r: 0.084441185, g: 0.36122048, b: 0.638, a: 1}
-    - _Backgroundfillcolor: {r: 0.06074994, g: 0.27548018, b: 0.486, a: 1}
-    - _Barmaxcolor: {r: 0.24479455, g: 1.0005687, b: 1.4475279, a: 1}
-    - _Barmincolor: {r: 0.039215688, g: 0.40392157, b: 0.61960787, a: 1}
-    - _Barsecondarymaxcolor: {r: 0, g: 0, b: 0, a: 1}
-    - _Barsecondarymincolor: {r: 0, g: 0, b: 0, a: 0}
+    - _Backgroundbordercolor: {r: 0.22139923, g: 0.25735295, b: 0.22814055, a: 1}
+    - _Backgroundfillcolor: {r: 0.299362, g: 0.3602941, b: 0.30986756, a: 1}
+    - _Barmaxcolor: {r: 0.028979266, g: 0.98529404, b: 0.31257367, a: 1}
+    - _Barmincolor: {r: 0.9843138, g: 0.641163, b: 0.027450953, a: 1}
+    - _Barsecondarymaxcolor: {r: 0.055776954, g: 2, b: 0.63745016, a: 1}
+    - _Barsecondarymincolor: {r: 2, g: 0.7034455, b: 0, a: 1}
     - _Bordercolor: {r: 0.42388234, g: 1.201, b: 0.59002465, a: 1}
-    - _Bordermaxcolor: {r: 0.41960785, g: 0.80784315, b: 0.90588236, a: 1}
-    - _Bordermincolor: {r: 0.41895548, g: 0.8066463, b: 0.9044118, a: 1}
+    - _Bordermaxcolor: {r: 0.007843138, g: 0.52156866, b: 0.16078432, a: 1}
+    - _Bordermincolor: {r: 0.9632353, g: 0.73463786, b: 0.13456966, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Color0: {r: 0.6824544, g: 0.2573529, b: 1, a: 0}
     - _Color1: {r: 0, g: 0.95862055, b: 1, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Maintexoffset: {r: 0, g: 0, b: 0, a: 0}
-    - _Maintexscrollspeed: {r: 1, g: 0, b: 0, a: 0}
+    - _Maintexscrollspeed: {r: -1, g: -1, b: 0, a: 0}
     - _Maintexspeed: {r: -0.01, g: 0, b: 0, a: 0}
     - _Maintextiling: {r: 1, g: 1, b: 0, a: 0}
     - _Maxcolor: {r: 0, g: 1, b: 0.50344807, a: 0}
     - _Mincolor: {r: 1, g: 0.2573529, b: 0.42636916, a: 0}
     - _Noisetexoffset: {r: 0, g: 0, b: 0, a: 0}
-    - _Noisetexspeed: {r: -0.5, g: 0, b: 0, a: 0}
+    - _Noisetexspeed: {r: 4, g: 4, b: 0, a: 0}
     - _Noisetextiling: {r: 1, g: 1, b: 0, a: 0}
     - _Secondarytexoffset: {r: 0, g: 0, b: 0, a: 0}
-    - _Secondarytexscrollspeed: {r: -0.5, g: -0.15, b: 0, a: 0}
+    - _Secondarytexscrollspeed: {r: -1, g: -1, b: 0, a: 0}
     - _Secondarytexspeed: {r: -0.01, g: -0.01, b: 0, a: 0}
-    - _Secondarytextiling: {r: 0.2, g: 0.2, b: 0, a: 0}
+    - _Secondarytextiling: {r: 0.5, g: 0.5, b: 0, a: 0}
     - _Texturescrollingspeed: {r: -0.01, g: 0, b: 0, a: 0}
     - _Vector1: {r: -0.05, g: -0.05, b: 0, a: 0}
     - _Vector2: {r: -0.5, g: 0.5, b: 0, a: 0}

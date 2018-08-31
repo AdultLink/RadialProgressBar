@@ -16,10 +16,8 @@ namespace AdultLink {
 		private Vector3 velocity = Vector3.zero;
 		private Vector3 targetPos;
 		private Vector3 targetRot;
-		private Camera cam;
 		// Use this for initialization
 		void Start () {
-			cam = Camera.main;
 			setPosition();
 			transform.position = targetPos;
 			transform.rotation = Quaternion.Euler(targetRot);
