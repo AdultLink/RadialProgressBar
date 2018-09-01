@@ -71,7 +71,7 @@ They all provide similar parameters to play with, like `opacity` and `contrast`,
 
 Again, bar color will lerp between min and max colors. If you don't want this to happen, simply give them both the same value.
 
-It is important to note that the noise texture will be MULTIPLIED with the secondary texture, and the result will be ADDED to the main texture. This gives you some room to get creative.
+It is important to note that the noise texture will be __*MULTIPLIED*__ with the secondary texture, and the result will be __*ADDED*__ to the main texture. This gives you some room to get creative.
 
 # Examples
 
