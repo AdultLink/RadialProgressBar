@@ -85,7 +85,7 @@ It is important to note that the noise texture will be __*MULTIPLIED*__ with the
 
 # Parameters list
 
-<details><summary>"Standard version" - Click to expand</summary><p>
+<details><summary>"Standard" version - Click to expand</summary><p>
 
 ```C#
 
@@ -150,7 +150,7 @@ _Noisetexoffset
 
 </p></details>
 
-<details><summary>"Simplified version" - Click to expand</summary><p>
+<details><summary>"Simplified" version - Click to expand</summary><p>
  
 ```C#
 
