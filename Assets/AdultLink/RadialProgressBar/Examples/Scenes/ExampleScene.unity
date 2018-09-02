@@ -5503,7 +5503,18 @@ MonoBehaviour:
   - name: Dawn of the final day
     pos: {x: 5.472386, y: 34.887, z: -27.9554}
     rot: {x: -17.497, y: 0.619, z: 0.002}
-    description: '- 24 hours remain -'
+    description: '- 24 hours remain -
+
+
+
+
+
+
+
+
+      Thanks to reddit user Beef331 for the clock idea.
+
+      https://jbeetham.itch.io/shader-clock'
   - name: Rainbow rings
     pos: {x: -33.01935, y: 6.940037, z: -71.78728}
     rot: {x: -2.886, y: 90.00001, z: 0.001}
