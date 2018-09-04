@@ -1,4 +1,4 @@
-# RadialProgressBar ![Follow](https://img.shields.io/github/followers/adultlink.svg?style=social&label=Follow) ![Size](https://img.shields.io/github/repo-size/badges/shields.svg) [![License](https://img.shields.io/badge/License-MIT-lightgrey.svg?style=flat)](http://adultlink.mit-license.org) [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/adultlink/5usd) 
+# RadialProgressBar [![Follow](https://img.shields.io/github/followers/adultlink.svg?style=social&label=Follow)](https://github.com/adultlink) ![Size](https://img.shields.io/github/repo-size/badges/shields.svg) [![License](https://img.shields.io/badge/License-MIT-lightgrey.svg?style=flat)](http://adultlink.mit-license.org) [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/adultlink/5usd) 
 
 ![IntroImage](Screenshots/AllInterfaceExamples.gif)
 
