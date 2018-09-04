@@ -1,4 +1,4 @@
-# RadialProgressBar [![License](https://img.shields.io/badge/License-MIT-lightgrey.svg?style=flat)](http://adultlink.mit-license.org) [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/adultlink/5usd)
+# RadialProgressBar ![Follow](https://img.shields.io/github/followers/adultlink.svg?style=social&label=Follow) ![Size](https://img.shields.io/github/repo-size/badges/shields.svg) [![License](https://img.shields.io/badge/License-MIT-lightgrey.svg?style=flat)](http://adultlink.mit-license.org) [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/adultlink/5usd) 
 
 ![IntroImage](Screenshots/AllInterfaceExamples.gif)
 
@@ -11,8 +11,6 @@ The shader can be edited through [Amplify Shader Editor](http://amplify.pt/unity
 Project developed using **Unity 2017.4.8f1**. Please use this version if you are planning on contributing. You can work on your own branch and send a pull request with your changes.
 
 ---
-
-_(Beware: The screenshots folder is quite heavy at the moment, I need to find a way to reduce file size for gifs without losing too much quality)_
 
 You can also just download a **unitypackage** from the releases tab and easily import everything to your project. This will not download the _screenshots_ folder.
 
