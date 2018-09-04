@@ -52,9 +52,9 @@ public class SpeedBar : MonoBehaviour {
 		fillPercentage = initialFillPercentage;
 		targetColor = initialMaxColor;
 		status = Status.idle;
-		accelAmount = 1f / accelTime * Time.fixedDeltaTime;
-		breakAmount = 1f / breakTime * Time.fixedDeltaTime;
-		idleAmount = 1f / idleTime * Time.fixedDeltaTime;
+		accelAmount = Time.fixedDeltaTime / accelTime;
+		breakAmount = Time.fixedDeltaTime / breakTime;
+		idleAmount = Time.fixedDeltaTime / idleTime;
 		mat.SetFloat("_Fillpercentage", fillPercentage);
 		setText();
 	}

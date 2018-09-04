@@ -27,8 +27,8 @@ public class HealBar : MonoBehaviour {
 		initialFillPercentage = mat.GetFloat("_Fillpercentage");
 		fillPercentage = initialFillPercentage;
 		mat.SetFloat("_Fillpercentage", fillPercentage);
-		increaseAmount = 1f / fillTime * Time.fixedDeltaTime;
-		decreaseAmount = 1f / decreaseTime * Time.fixedDeltaTime;
+		increaseAmount = Time.fixedDeltaTime / fillTime;
+		decreaseAmount = Time.fixedDeltaTime / decreaseTime;
 	}
 	void FixedUpdate () {
 		//IF HOLDING H

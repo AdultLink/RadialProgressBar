@@ -23,7 +23,7 @@ public class PictureBar : MonoBehaviour {
 	void Start () {
 		fillPercentage = initialPercentage;
 		mat.SetFloat("_Fillpercentage", fillPercentage);
-		increaseAmount = 1f / fillTime * Time.fixedDeltaTime;
+		increaseAmount = Time.fixedDeltaTime / fillTime;
 	}
 	
 	// Update is called once per frame
