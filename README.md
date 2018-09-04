@@ -14,7 +14,7 @@ Project developed using **Unity 2017.4.8f1**. Please use this version if you are
 
 You can also just download a **unitypackage** from the [releases tab](https://github.com/AdultLink/RadialProgressBar/releases) and easily import everything to your project. This will not download the _screenshots_ folder.
 
-Disclaimer: The scripts controlling the behavior of the examples provided are not optimized in any way and should only be taken as quick & dirty examples.
+_Disclaimer: The scripts controlling the behavior of the examples provided are not optimized in any way and should only be taken as quick & dirty examples._
 
 # Table of contents
 1. [Getting started](#getting-started)
