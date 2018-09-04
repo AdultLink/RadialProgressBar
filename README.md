@@ -33,7 +33,9 @@ Disclaimer: The scripts controlling the behavior of the examples provided are no
 
 To get this shader up and running you only need to attach it to a material, and drop that material onto a quad. That's it, you now have a basic HP Bar!
 
-![BasicSetup](Screenshots/BasicSetup.png)
+<p align="center">
+   <img src="Screenshots/BasicSetup.png">
+</p>
 
 Best is to check the examples provided to get an idea on how to tweak the different parameters, and to take inspiration from them.
 
@@ -45,7 +47,9 @@ This shader comes in two variants; "standard" (the one that will be described he
 
 These are settings that affect the whole bar, and they are pretty much self-explanatory. By increasing and decreasing `Fill percentage`, we control the amount of that bar that is filled. This is the main setting for this shader.
 
-![GeneralSettings](Screenshots/GeneralSettings.jpg)
+<p align="center">
+   <img src="Screenshots/GeneralSettings.jpg">
+</p>
 
 `Rotation` and `Arc range` (0-360) allows you to control the starting and ending angles.
 
@@ -53,7 +57,9 @@ These are settings that affect the whole bar, and they are pretty much self-expl
 
 "Background" will always be visible regardless of the fill percentage (unless you turn the opacity all the way down to 0, of course).
 
-![BackgroundSettings](Screenshots/BackgroundSettings.jpg)
+<p align="center">
+   <img src="Screenshots/BackgroundSettings.jpg">
+</p>
 
 Here, we can set both the color for the "fill" area of the background, as well as for the border. Additionally, border radial (along the circle) and tangential widths can be set, as well as its opacity.
 
@@ -61,7 +67,9 @@ Here, we can set both the color for the "fill" area of the background, as well a
 
 This is the meat of the shader, and it is divided into two sections: `Border` and `Fill`. Border settings are very similar to the ones already described for the background, with the caveat that it is possible to specify a `Color (min)` and a `Color (max)`, so that the bar will lerp between them as is fills up.
 
-![BarSettings](Screenshots/BarSettings.jpg)
+<p align="center">
+   <img src="Screenshots/BarSettings.jpg">
+</p>
 
 Fill settings, on the other hand, are comprised of three more sections: `Main texture`, `Secondary texture` and `Noise texture`.
 
@@ -75,13 +83,12 @@ It is important to note that the noise texture will be __*MULTIPLIED*__ with the
 
 # Examples
 
-![Example4](Screenshots/Example4.gif) ![Example5](Screenshots/Example5.gif)
-
-![Example1](Screenshots/Example1.gif)
-
-![Example2](Screenshots/Example2.gif)
-
-![Example3](Screenshots/Example3.gif)
+<p align="center">
+<img src="Screenshots/Example4.gif"> <img src="Screenshots/Example6.gif" width="290" height="292"> <img src="Screenshots/Example5.gif">
+<img src="Screenshots/Example2.gif" width="788" height="443">
+<img src="Screenshots/Example7.gif" width="788" height="355">
+<img src="Screenshots/Example1.gif" width="346" height="295"> <img src="Screenshots/Example3.gif" width="437" height="295">
+ </p>
 
 # Parameters list
 
